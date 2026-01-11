@@ -6,46 +6,72 @@
 
 @layer base {
   :root {
-    --background: 220 20% 4%;
-    --foreground: 210 40% 98%;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 5%;
 
-    --card: 220 20% 8%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 98%;
+    --card-foreground: 0 0% 5%;
 
-    --popover: 220 20% 8%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 5%;
 
-    --primary: 199 89% 48%;
-    --primary-foreground: 220 20% 4%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 20% 14%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 9%;
 
-    --muted: 220 20% 14%;
-    --muted-foreground: 215 20% 55%;
+    --muted: 0 0% 94%;
+    --muted-foreground: 0 0% 45%;
 
-    --accent: 199 89% 48%;
-    --accent-foreground: 220 20% 4%;
+    --accent: 0 0% 96%;
+    --accent-foreground: 0 0% 9%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 220 20% 18%;
-    --input: 220 20% 18%;
-    --ring: 199 89% 48%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 0 0% 9%;
 
     --radius: 0.75rem;
 
     /* Custom tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(199 89% 48%), hsl(220 89% 60%));
-    --gradient-card: linear-gradient(145deg, hsl(220 20% 10%), hsl(220 20% 6%));
-    --shadow-glow: 0 0 40px hsl(199 89% 48% / 0.15);
-    --shadow-card: 0 8px 32px hsl(220 20% 2% / 0.4);
+    --gradient-primary: linear-gradient(135deg, hsl(0 0% 15%), hsl(0 0% 25%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(0 0% 96%));
+    --shadow-soft: 0 4px 24px hsl(0 0% 0% / 0.08);
+    --shadow-card: 0 8px 32px hsl(0 0% 0% / 0.1);
+    --shadow-hover: 0 12px 40px hsl(0 0% 0% / 0.15);
   }
 
   .dark {
-    --background: 220 20% 4%;
-    --foreground: 210 40% 98%;
+    --background: 0 0% 5%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 0 0% 15%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 0 0% 80%;
   }
 }
 
@@ -63,11 +89,11 @@
 @layer components {
   .gradient-text {
     @apply bg-clip-text text-transparent;
-    background-image: var(--gradient-primary);
+    background-image: linear-gradient(135deg, hsl(0 0% 20%), hsl(0 0% 50%));
   }
 
   .card-glass {
-    @apply bg-card/80 backdrop-blur-xl border border-border/50 rounded-2xl;
+    @apply bg-card border border-border rounded-2xl;
     box-shadow: var(--shadow-card);
   }
 
@@ -76,18 +102,16 @@
   }
 
   .card-hover:hover {
-    @apply -translate-y-1 border-primary/30;
-    box-shadow: var(--shadow-glow);
+    @apply -translate-y-1;
+    box-shadow: var(--shadow-hover);
   }
 
-  .btn-primary-gradient {
-    background-image: var(--gradient-primary);
-    @apply text-primary-foreground font-semibold px-6 py-3 rounded-xl transition-all duration-300;
+  .btn-primary-solid {
+    @apply bg-primary text-primary-foreground font-semibold px-6 py-3 rounded-xl transition-all duration-300;
   }
 
-  .btn-primary-gradient:hover {
-    @apply scale-105;
-    box-shadow: var(--shadow-glow);
+  .btn-primary-solid:hover {
+    @apply scale-105 opacity-90;
   }
 
   .section-title {
@@ -119,5 +143,23 @@
   @keyframes slideUp {
     from { opacity: 0; transform: translateY(40px); }
     to { opacity: 1; transform: translateY(0); }
+  }
+
+  .animate-bounce-slow {
+    animation: bounceSlow 2s ease-in-out infinite;
+  }
+
+  @keyframes bounceSlow {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+
+  .animate-pulse-ring {
+    animation: pulseRing 2s ease-out infinite;
+  }
+
+  @keyframes pulseRing {
+    0% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(1.5); opacity: 0; }
   }
 }
