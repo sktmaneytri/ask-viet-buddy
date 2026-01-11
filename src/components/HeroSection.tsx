@@ -32,11 +32,17 @@ const HeroSection = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button className="btn-primary-solid h-14 text-base px-8 gap-2">
+              <Button 
+                className="btn-primary-solid h-14 text-base px-8 gap-2"
+                onClick={() => window.location.hash = 'airpods'}
+              >
                 Mua ngay
                 <ArrowRight className="w-5 h-5" />
               </Button>
-              <Button variant="outline" className="h-14 text-base px-8 border-border hover:bg-secondary">
+              <Button variant="outline" 
+               className="h-14 text-base px-8 border-border hover:bg-secondary"
+               onClick={() => window.location.hash = 'charger'}
+               >
                 Xem sản phẩm
               </Button>
             </div>
@@ -63,23 +69,10 @@ const HeroSection = () => {
             <div className="relative animate-float">
               <div className="absolute inset-0 bg-gradient-to-br from-muted/50 to-muted/20 rounded-full blur-3xl scale-75" />
               <img
-                src="https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?w=600&h=600&fit=crop"
+                src="https://images.unsplash.com/photo-1688789645479-955d294b419f?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="AirPods"
-                className="relative w-72 h-72 sm:w-96 sm:h-96 object-cover rounded-3xl shadow-2xl"
+                className="relative w-96 h-96 sm:w-full sm:h-auto lg:w-[500px] lg:h-[500px] object-cover rounded-3xl shadow-2xl"
               />
-              
-              {/* Floating Badge */}
-              <div className="absolute -bottom-4 -left-4 card-glass p-4 rounded-2xl animate-fade-in" style={{ animationDelay: '0.3s' }}>
-                <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center">
-                    <Headphones className="w-6 h-6" />
-                  </div>
-                  <div>
-                    <p className="text-sm text-muted-foreground">AirPods Pro 2</p>
-                    <p className="font-bold">280.000đ</p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>

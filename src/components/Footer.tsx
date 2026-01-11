@@ -59,15 +59,15 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center gap-3 text-muted-foreground">
                 <Phone className="w-4 h-4" />
-                <span>0123 456 789</span>
+                <span>+84 382 943 017</span>
               </li>
               <li className="flex items-center gap-3 text-muted-foreground">
                 <Mail className="w-4 h-4" />
-                <span>contact@maneyshop.vn</span>
+                <span>sktmaneytri@gmail.com</span>
               </li>
               <li className="flex items-start gap-3 text-muted-foreground">
                 <MapPin className="w-4 h-4 mt-1" />
-                <span>123 Đường ABC, Quận 1, TP. Hồ Chí Minh</span>
+                <span>TP. Hồ Chí Minh</span>
               </li>
             </ul>
           </div>

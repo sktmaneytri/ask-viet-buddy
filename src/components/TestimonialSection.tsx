@@ -14,13 +14,13 @@ const TestimonialSection = () => {
           
           <h2 className="section-title mb-4">Khách hàng nói gì về chúng tôi?</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Hơn 10.000 khách hàng đã tin tưởng ManeyShop. Đọc những đánh giá thực từ người dùng.
+            Hơn 1.000 khách hàng đã tin tưởng ManeyShop. Đọc những đánh giá thực từ người dùng.
           </p>
 
           {/* Stats */}
           <div className="flex flex-wrap justify-center gap-8 mt-10">
             <div className="text-center">
-              <p className="text-4xl font-bold">4.9/5</p>
+              <p className="text-4xl font-bold">4.75/5</p>
               <div className="flex items-center justify-center gap-1 my-2">
                 {[1, 2, 3, 4, 5].map(star => (
                   <Star key={star} className="w-4 h-4 text-yellow-500 fill-yellow-500" />
@@ -29,11 +29,11 @@ const TestimonialSection = () => {
               <p className="text-sm text-muted-foreground">Điểm đánh giá</p>
             </div>
             <div className="text-center">
-              <p className="text-4xl font-bold">10K+</p>
+              <p className="text-4xl font-bold">1K+</p>
               <p className="text-sm text-muted-foreground mt-3">Khách hàng</p>
             </div>
             <div className="text-center">
-              <p className="text-4xl font-bold">98%</p>
+              <p className="text-4xl font-bold">97%</p>
               <p className="text-sm text-muted-foreground mt-3">Hài lòng</p>
             </div>
           </div>

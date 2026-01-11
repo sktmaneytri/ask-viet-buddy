@@ -5,7 +5,7 @@ export const categories: Category[] = [
     id: 'airpods',
     name: 'AirPods',
     icon: '🎧',
-    description: 'Tai nghe không dây chính hãng'
+    description: 'Tai nghe không dây AP hổ vằn'
   },
   {
     id: 'speaker',
@@ -17,41 +17,28 @@ export const categories: Category[] = [
     id: 'charger',
     name: 'Củ Sạc',
     icon: '🔌',
-    description: 'Củ sạc nhanh cho mọi thiết bị'
+    description: 'Củ sạc nhanh chính hãng anker, remax,.. siêu bền và an toàn'
   },
   {
     id: 'cable',
     name: 'Cáp Sạc',
     icon: '🔗',
-    description: 'Cáp sạc chất lượng cao'
+    description: 'Cáp sạc nhanh chính hãng anker, remax,.. chất lượng cao'
   }
 ];
 
 export const products: Product[] = [
   // AirPods
   {
-    id: 'airpods-3',
-    name: 'AirPods 3',
-    category: 'airpods',
-    brand: 'Apple',
-    price: 4290000,
-    originalPrice: 4990000,
-    image: 'https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?w=400&h=400&fit=crop',
-    description: 'AirPods thế hệ 3 với âm thanh không gian và chống nước IPX4',
-    specifications: ['Chip H1', 'Âm thanh không gian', 'Chống nước IPX4', 'Pin 6 giờ'],
-    inStock: true,
-    rating: 4.8,
-    reviews: 256
-  },
-  {
     id: 'airpods-4',
     name: 'AirPods 4',
     category: 'airpods',
-    brand: 'Apple',
-    price: 3290000,
-    image: 'https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=400&h=400&fit=crop',
-    description: 'AirPods 4 mới nhất với thiết kế cải tiến và âm thanh vượt trội',
-    specifications: ['Chip H2', 'Thiết kế mới', 'Pin 5 giờ', 'Sạc USB-C'],
+    brand: 'Hàng replica',
+    price: 300000,
+    originalPrice: 599000,
+    image: 'https://media.istockphoto.com/id/2237358070/vi/anh/tai-nghe-kh%C3%B4ng-d%C3%A2y-hi%E1%BB%87n-%C4%91%E1%BA%A1i-m%C3%A0u-tr%E1%BA%AFng-b%E1%BB%8B-c%C3%B4-l%E1%BA%ADp-tr%C3%AAn-n%E1%BB%81n-tr%E1%BA%AFng-sao-ch%C3%A9p-kh%C3%B4ng-gian.jpg?s=2048x2048&w=is&k=20&c=S77IzExYDkGCuEIVCNl9lI89yDpagM54mvKI1ji4iE0=',
+    description: 'AirPods 4 ANC mới nhất với thiết kế cải tiến và âm thanh vượt trội - công nghệ chống ồn chủ động',
+    specifications: ['Chip A12', 'Chống ồn chủ động ANC', 'Thiết kế mới', 'Pin 5 giờ', 'Sạc USB-C'],
     inStock: true,
     rating: 4.9,
     reviews: 128
@@ -60,10 +47,10 @@ export const products: Product[] = [
     id: 'airpods-pro',
     name: 'AirPods Pro',
     category: 'airpods',
-    brand: 'Apple',
-    price: 5590000,
-    originalPrice: 6490000,
-    image: 'https://images.unsplash.com/photo-1588423771073-b8903fbb85b5?w=400&h=400&fit=crop',
+    brand: 'Hàng replica',
+    price: 250000,
+    originalPrice: 350000,
+    image: 'https://images.unsplash.com/photo-1580477371194-4593e3c7c6cf?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     description: 'AirPods Pro với chống ồn chủ động và chế độ xuyên âm',
     specifications: ['Chống ồn chủ động', 'Chế độ xuyên âm', 'Chống nước IPX4', 'Chip H1'],
     inStock: true,
@@ -74,8 +61,8 @@ export const products: Product[] = [
     id: 'airpods-pro-2',
     name: 'AirPods Pro 2',
     category: 'airpods',
-    brand: 'Apple',
-    price: 6290000,
+    brand: 'Hàng replica',
+    price: 280000,
     image: 'https://images.unsplash.com/photo-1603351154351-5e2d0600bb77?w=400&h=400&fit=crop',
     description: 'AirPods Pro 2 với chip H2 mới, chống ồn gấp đôi',
     specifications: ['Chip H2', 'Chống ồn 2x', 'Âm thanh không gian', 'Adaptive Audio'],
@@ -83,15 +70,29 @@ export const products: Product[] = [
     rating: 5.0,
     reviews: 324
   },
+  {
+    id: 'airpods-3',
+    name: 'AirPods 3',
+    category: 'airpods',
+    brand: 'Hàng replica',
+    price: 250000,
+    originalPrice: 499000,
+    image: 'https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?w=400&h=400&fit=crop',
+    description: 'AirPods thế hệ 3 với thiết kế công thái học, nhỏ gọn thoải mái cho tai',
+    specifications: ['Chip H1', 'Âm thanh không gian', 'Chống nước IPX4', 'Pin 6 giờ'],
+    inStock: true,
+    rating: 4.8,
+    reviews: 256
+  },
 
   // Speakers
   {
     id: 'jbl-flip-6',
     name: 'JBL Flip 6',
     category: 'speaker',
-    brand: 'JBL',
-    price: 2990000,
-    originalPrice: 3490000,
+    brand: 'Hàng replica',
+    price: 599000,
+    originalPrice: 749000,
     image: 'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400&h=400&fit=crop',
     description: 'Loa bluetooth JBL Flip 6 với âm bass mạnh mẽ, chống nước IP67',
     specifications: ['Công suất 30W', 'Pin 12 giờ', 'Chống nước IP67', 'PartyBoost'],
@@ -263,7 +264,7 @@ export const testimonials: Testimonial[] = [
   {
     id: '1',
     name: 'Nguyễn Văn Minh',
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face',
+    avatar: 'https://images.unsplash.com/photo-1750535135635-3783825e996c?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     rating: 5,
     comment: 'AirPods Pro 2 chất lượng tuyệt vời! Chống ồn cực tốt, pin trâu. Ship nhanh, đóng gói cẩn thận. Sẽ ủng hộ shop dài dài!',
     product: 'AirPods Pro 2',
@@ -273,7 +274,7 @@ export const testimonials: Testimonial[] = [
   {
     id: '2',
     name: 'Trần Thị Hương',
-    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face',
+    avatar: 'https://plus.unsplash.com/premium_photo-1739786996040-32bde1db0610?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     rating: 5,
     comment: 'Mua củ sạc Anker 67W về dùng cho iPhone 15 Pro Max, sạc siêu nhanh. Giá tốt hơn nhiều nơi khác. Recommend mọi người!',
     product: 'Anker 737 GaNPrime 67W',
@@ -283,7 +284,7 @@ export const testimonials: Testimonial[] = [
   {
     id: '3',
     name: 'Lê Hoàng Nam',
-    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face',
+    avatar: 'https://images.unsplash.com/photo-1750535135635-3783825e996c?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     rating: 5,
     comment: 'Loa JBL Flip 6 âm thanh quá đỉnh! Mang đi picnic, đi biển thoải mái vì chống nước tốt. Shop tư vấn nhiệt tình.',
     product: 'JBL Flip 6',
@@ -293,7 +294,7 @@ export const testimonials: Testimonial[] = [
   {
     id: '4',
     name: 'Phạm Thu Trang',
-    avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face',
+    avatar: 'https://plus.unsplash.com/premium_photo-1739786996040-32bde1db0610?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     rating: 4,
     comment: 'Cáp sạc Anker dùng bền lắm, đã mua lần 2 rồi. Giao hàng nhanh, giá cả hợp lý. Chỉ tiếc là không có nhiều màu.',
     product: 'Anker PowerLine III',
@@ -303,7 +304,7 @@ export const testimonials: Testimonial[] = [
   {
     id: '5',
     name: 'Đỗ Quang Huy',
-    avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face',
+    avatar: 'https://images.unsplash.com/photo-1750535135635-3783825e996c?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     rating: 5,
     comment: 'Marshall Emberton II design đẹp quá! Âm thanh vintage rất hay. Pin dùng được mấy ngày luôn. Hàng chính hãng 100%.',
     product: 'Marshall Emberton II',
@@ -313,7 +314,7 @@ export const testimonials: Testimonial[] = [
   {
     id: '6',
     name: 'Vũ Thị Mai Anh',
-    avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&crop=face',
+    avatar: 'https://plus.unsplash.com/premium_photo-1739786996040-32bde1db0610?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     rating: 5,
     comment: 'Mua AirPods 3 tặng bạn gái, em ấy thích lắm. Đóng hộp đẹp, có túi giấy tặng kèm. Giá sale rẻ hơn Apple Store.',
     product: 'AirPods 3',
@@ -323,7 +324,7 @@ export const testimonials: Testimonial[] = [
   {
     id: '7',
     name: 'Hoàng Đức Thịnh',
-    avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop&crop=face',
+    avatar: 'https://images.unsplash.com/photo-1750535135635-3783825e996c?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     rating: 5,
     comment: 'Shop uy tín, hàng chính hãng. Đã mua nhiều lần, lần nào cũng hài lòng. Nhân viên tư vấn rất am hiểu sản phẩm.',
     product: 'Apple 20W Adapter',
@@ -333,7 +334,7 @@ export const testimonials: Testimonial[] = [
   {
     id: '8',
     name: 'Nguyễn Thùy Linh',
-    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=face',
+    avatar: 'https://plus.unsplash.com/premium_photo-1739786996040-32bde1db0610?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     rating: 5,
     comment: 'Bose SoundLink Flex nhỏ gọn mà bass cực mạnh! Mang theo đi gym rất tiện. Recommend cho ai thích nghe nhạc.',
     product: 'Bose SoundLink Flex',
