@@ -28,8 +28,7 @@ const HeroSection = () => {
             </h1>
 
             <p className="text-lg text-muted-foreground mb-8 max-w-md mx-auto lg:mx-0">
-              AirPods, loa, củ sạc, cáp sạc từ Apple, Anker, JBL, Marshall và các thương hiệu hàng đầu. 
-              Cam kết chính hãng 100%.
+              AirPods hổ vằn, loa, củ sạc, cáp sạc zin - chính hãng cam kết chất lượng tốt nhất cho khách hàng.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -77,7 +76,7 @@ const HeroSection = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">AirPods Pro 2</p>
-                    <p className="font-bold">6.290.000đ</p>
+                    <p className="font-bold">280.000đ</p>
                   </div>
                 </div>
               </div>
