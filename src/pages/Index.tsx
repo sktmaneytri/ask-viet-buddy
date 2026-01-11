@@ -1,12 +1,33 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Header from '@/components/Header';
+import HeroSection from '@/components/HeroSection';
+import CategorySection from '@/components/CategorySection';
+import ProductSection from '@/components/ProductSection';
+import Footer from '@/components/Footer';
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <Header />
+      <main>
+        <HeroSection />
+        <CategorySection />
+        <ProductSection
+          categoryId="airpods"
+          title="AirPods"
+          subtitle="Tai nghe không dây chính hãng Apple với âm thanh đỉnh cao"
+        />
+        <ProductSection
+          categoryId="charger"
+          title="Củ Sạc"
+          subtitle="Củ sạc nhanh từ Apple, Anker cho mọi thiết bị iPhone"
+        />
+        <ProductSection
+          categoryId="cable"
+          title="Cáp Sạc"
+          subtitle="Cáp sạc bền bỉ, sạc nhanh cho iPhone mọi thế hệ"
+        />
+      </main>
+      <Footer />
     </div>
   );
 };

@@ -1,0 +1,84 @@
+import { Mail, Phone, MapPin, Facebook, Instagram, MessageCircle } from 'lucide-react';
+
+const Footer = () => {
+  return (
+    <footer className="bg-card border-t border-border">
+      <div className="container mx-auto px-4 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* Brand */}
+          <div>
+            <div className="flex items-center gap-2 mb-4">
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-blue-600 flex items-center justify-center">
+                <span className="text-primary-foreground font-bold text-lg">M</span>
+              </div>
+              <span className="text-xl font-bold tracking-tight">
+                Maney<span className="gradient-text">Shop</span>
+              </span>
+            </div>
+            <p className="text-muted-foreground mb-4">
+              Cửa hàng phụ kiện công nghệ chính hãng. Chất lượng tạo nên sự khác biệt.
+            </p>
+            <div className="flex gap-3">
+              <a href="#" className="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors">
+                <Facebook className="w-5 h-5" />
+              </a>
+              <a href="#" className="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors">
+                <Instagram className="w-5 h-5" />
+              </a>
+              <a href="#" className="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors">
+                <MessageCircle className="w-5 h-5" />
+              </a>
+            </div>
+          </div>
+
+          {/* Links */}
+          <div>
+            <h4 className="font-semibold mb-4">Sản phẩm</h4>
+            <ul className="space-y-2">
+              <li><a href="#airpods" className="text-muted-foreground hover:text-foreground transition-colors">AirPods</a></li>
+              <li><a href="#charger" className="text-muted-foreground hover:text-foreground transition-colors">Củ sạc</a></li>
+              <li><a href="#cable" className="text-muted-foreground hover:text-foreground transition-colors">Cáp sạc</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Khuyến mãi</a></li>
+            </ul>
+          </div>
+
+          {/* Support */}
+          <div>
+            <h4 className="font-semibold mb-4">Hỗ trợ</h4>
+            <ul className="space-y-2">
+              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Chính sách bảo hành</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Chính sách đổi trả</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Hướng dẫn mua hàng</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Câu hỏi thường gặp</a></li>
+            </ul>
+          </div>
+
+          {/* Contact */}
+          <div>
+            <h4 className="font-semibold mb-4">Liên hệ</h4>
+            <ul className="space-y-3">
+              <li className="flex items-center gap-3 text-muted-foreground">
+                <Phone className="w-4 h-4 text-primary" />
+                <span>0123 456 789</span>
+              </li>
+              <li className="flex items-center gap-3 text-muted-foreground">
+                <Mail className="w-4 h-4 text-primary" />
+                <span>contact@maneyshop.vn</span>
+              </li>
+              <li className="flex items-start gap-3 text-muted-foreground">
+                <MapPin className="w-4 h-4 text-primary mt-1" />
+                <span>123 Đường ABC, Quận 1, TP. Hồ Chí Minh</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="border-t border-border mt-10 pt-6 text-center text-muted-foreground text-sm">
+          <p>© 2024 ManeyShop. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
