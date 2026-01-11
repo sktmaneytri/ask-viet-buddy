@@ -12,21 +12,23 @@ const Header = () => {
   const navLinks = [
     { name: 'Trang chủ', href: '#home' },
     { name: 'AirPods', href: '#airpods' },
+    { name: 'Loa', href: '#speaker' },
     { name: 'Củ Sạc', href: '#charger' },
     { name: 'Cáp Sạc', href: '#cable' },
+    { name: 'Đánh giá', href: '#reviews' },
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border/50">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <a href="#home" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-blue-600 flex items-center justify-center">
+            <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-lg">M</span>
             </div>
             <span className="text-xl font-bold tracking-tight">
-              Maney<span className="gradient-text">Shop</span>
+              Maney<span className="text-muted-foreground">Shop</span>
             </span>
           </a>
 
@@ -76,7 +78,7 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <nav className="md:hidden py-4 border-t border-border/50 animate-fade-in">
+          <nav className="md:hidden py-4 border-t border-border animate-fade-in">
             {navLinks.map(link => (
               <a
                 key={link.name}

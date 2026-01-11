@@ -1,7 +1,7 @@
 export interface Product {
   id: string;
   name: string;
-  category: 'airpods' | 'charger' | 'cable';
+  category: 'airpods' | 'charger' | 'cable' | 'speaker';
   subcategory?: string;
   brand: string;
   price: number;
@@ -24,3 +24,14 @@ export type Category = {
   icon: string;
   description: string;
 };
+
+export interface Testimonial {
+  id: string;
+  name: string;
+  avatar: string;
+  rating: number;
+  comment: string;
+  product: string;
+  date: string;
+  verified: boolean;
+}

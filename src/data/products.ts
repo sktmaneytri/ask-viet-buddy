@@ -1,4 +1,4 @@
-import { Product, Category } from '@/types/product';
+import { Product, Category, Testimonial } from '@/types/product';
 
 export const categories: Category[] = [
   {
@@ -6,6 +6,12 @@ export const categories: Category[] = [
     name: 'AirPods',
     icon: '🎧',
     description: 'Tai nghe không dây chính hãng'
+  },
+  {
+    id: 'speaker',
+    name: 'Loa',
+    icon: '🔊',
+    description: 'Loa bluetooth chất lượng cao'
   },
   {
     id: 'charger',
@@ -76,6 +82,63 @@ export const products: Product[] = [
     inStock: true,
     rating: 5.0,
     reviews: 324
+  },
+
+  // Speakers
+  {
+    id: 'jbl-flip-6',
+    name: 'JBL Flip 6',
+    category: 'speaker',
+    brand: 'JBL',
+    price: 2990000,
+    originalPrice: 3490000,
+    image: 'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400&h=400&fit=crop',
+    description: 'Loa bluetooth JBL Flip 6 với âm bass mạnh mẽ, chống nước IP67',
+    specifications: ['Công suất 30W', 'Pin 12 giờ', 'Chống nước IP67', 'PartyBoost'],
+    inStock: true,
+    rating: 4.8,
+    reviews: 892
+  },
+  {
+    id: 'marshall-emberton',
+    name: 'Marshall Emberton II',
+    category: 'speaker',
+    brand: 'Marshall',
+    price: 3890000,
+    image: 'https://images.unsplash.com/photo-1545454675-3531b543be5d?w=400&h=400&fit=crop',
+    description: 'Loa Marshall Emberton II thiết kế cổ điển, âm thanh đỉnh cao',
+    specifications: ['Công suất 20W', 'Pin 30 giờ', 'Chống nước IP67', 'Bluetooth 5.1'],
+    inStock: true,
+    rating: 4.9,
+    reviews: 456
+  },
+  {
+    id: 'bose-soundlink',
+    name: 'Bose SoundLink Flex',
+    category: 'speaker',
+    brand: 'Bose',
+    price: 3290000,
+    originalPrice: 3790000,
+    image: 'https://images.unsplash.com/photo-1558089687-f282ffcbc126?w=400&h=400&fit=crop',
+    description: 'Loa Bose SoundLink Flex siêu bền, âm thanh Bose đặc trưng',
+    specifications: ['PositionIQ', 'Pin 12 giờ', 'Chống nước IP67', 'Chống va đập'],
+    inStock: true,
+    rating: 4.7,
+    reviews: 345
+  },
+  {
+    id: 'anker-soundcore',
+    name: 'Anker Soundcore Motion+',
+    category: 'speaker',
+    brand: 'Anker',
+    price: 1890000,
+    originalPrice: 2290000,
+    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop',
+    description: 'Loa Anker Soundcore Motion+ Hi-Res Audio, bass cực mạnh',
+    specifications: ['Công suất 30W', 'Hi-Res Audio', 'Pin 12 giờ', 'BassUp'],
+    inStock: true,
+    rating: 4.6,
+    reviews: 1234
   },
 
   // Củ sạc iPhone < 15
@@ -193,5 +256,88 @@ export const products: Product[] = [
     inStock: true,
     rating: 4.7,
     reviews: 789
+  }
+];
+
+export const testimonials: Testimonial[] = [
+  {
+    id: '1',
+    name: 'Nguyễn Văn Minh',
+    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face',
+    rating: 5,
+    comment: 'AirPods Pro 2 chất lượng tuyệt vời! Chống ồn cực tốt, pin trâu. Ship nhanh, đóng gói cẩn thận. Sẽ ủng hộ shop dài dài!',
+    product: 'AirPods Pro 2',
+    date: '15/01/2024',
+    verified: true
+  },
+  {
+    id: '2',
+    name: 'Trần Thị Hương',
+    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face',
+    rating: 5,
+    comment: 'Mua củ sạc Anker 67W về dùng cho iPhone 15 Pro Max, sạc siêu nhanh. Giá tốt hơn nhiều nơi khác. Recommend mọi người!',
+    product: 'Anker 737 GaNPrime 67W',
+    date: '12/01/2024',
+    verified: true
+  },
+  {
+    id: '3',
+    name: 'Lê Hoàng Nam',
+    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face',
+    rating: 5,
+    comment: 'Loa JBL Flip 6 âm thanh quá đỉnh! Mang đi picnic, đi biển thoải mái vì chống nước tốt. Shop tư vấn nhiệt tình.',
+    product: 'JBL Flip 6',
+    date: '10/01/2024',
+    verified: true
+  },
+  {
+    id: '4',
+    name: 'Phạm Thu Trang',
+    avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face',
+    rating: 4,
+    comment: 'Cáp sạc Anker dùng bền lắm, đã mua lần 2 rồi. Giao hàng nhanh, giá cả hợp lý. Chỉ tiếc là không có nhiều màu.',
+    product: 'Anker PowerLine III',
+    date: '08/01/2024',
+    verified: true
+  },
+  {
+    id: '5',
+    name: 'Đỗ Quang Huy',
+    avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face',
+    rating: 5,
+    comment: 'Marshall Emberton II design đẹp quá! Âm thanh vintage rất hay. Pin dùng được mấy ngày luôn. Hàng chính hãng 100%.',
+    product: 'Marshall Emberton II',
+    date: '05/01/2024',
+    verified: true
+  },
+  {
+    id: '6',
+    name: 'Vũ Thị Mai Anh',
+    avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&crop=face',
+    rating: 5,
+    comment: 'Mua AirPods 3 tặng bạn gái, em ấy thích lắm. Đóng hộp đẹp, có túi giấy tặng kèm. Giá sale rẻ hơn Apple Store.',
+    product: 'AirPods 3',
+    date: '03/01/2024',
+    verified: true
+  },
+  {
+    id: '7',
+    name: 'Hoàng Đức Thịnh',
+    avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop&crop=face',
+    rating: 5,
+    comment: 'Shop uy tín, hàng chính hãng. Đã mua nhiều lần, lần nào cũng hài lòng. Nhân viên tư vấn rất am hiểu sản phẩm.',
+    product: 'Apple 20W Adapter',
+    date: '01/01/2024',
+    verified: true
+  },
+  {
+    id: '8',
+    name: 'Nguyễn Thùy Linh',
+    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=face',
+    rating: 5,
+    comment: 'Bose SoundLink Flex nhỏ gọn mà bass cực mạnh! Mang theo đi gym rất tiện. Recommend cho ai thích nghe nhạc.',
+    product: 'Bose SoundLink Flex',
+    date: '28/12/2023',
+    verified: true
   }
 ];

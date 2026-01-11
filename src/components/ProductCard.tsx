@@ -30,7 +30,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
   return (
     <div className="card-glass card-hover overflow-hidden group">
       {/* Image */}
-      <div className="relative aspect-square overflow-hidden">
+      <div className="relative aspect-square overflow-hidden bg-secondary">
         <img
           src={product.image}
           alt={product.name}
@@ -38,19 +38,19 @@ const ProductCard = ({ product }: ProductCardProps) => {
         />
         
         {discount > 0 && (
-          <div className="absolute top-3 left-3 px-2 py-1 bg-destructive text-destructive-foreground text-xs font-bold rounded-lg">
+          <div className="absolute top-3 left-3 px-2 py-1 bg-primary text-primary-foreground text-xs font-bold rounded-lg">
             -{discount}%
           </div>
         )}
         
-        <div className="absolute top-3 right-3 px-2 py-1 bg-secondary text-secondary-foreground text-xs font-medium rounded-lg">
+        <div className="absolute top-3 right-3 px-2 py-1 bg-background/90 backdrop-blur-sm text-foreground text-xs font-medium rounded-lg border border-border">
           {product.brand}
         </div>
       </div>
 
       {/* Content */}
       <div className="p-5">
-        <h3 className="font-semibold text-lg mb-1 line-clamp-1 group-hover:text-primary transition-colors">
+        <h3 className="font-semibold text-lg mb-1 line-clamp-1 group-hover:text-muted-foreground transition-colors">
           {product.name}
         </h3>
         
@@ -61,7 +61,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
         {/* Rating */}
         <div className="flex items-center gap-2 mb-3">
           <div className="flex items-center gap-1">
-            <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+            <Star className="w-4 h-4 fill-yellow-500 text-yellow-500" />
             <span className="text-sm font-medium">{product.rating}</span>
           </div>
           <span className="text-sm text-muted-foreground">
@@ -72,7 +72,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
         {/* Price */}
         <div className="flex items-center justify-between">
           <div>
-            <p className="text-xl font-bold gradient-text">
+            <p className="text-xl font-bold">
               {formatPrice(product.price)}
             </p>
             {product.originalPrice && (
@@ -84,7 +84,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
 
           <Button
             size="icon"
-            className="btn-primary-gradient w-11 h-11 rounded-xl"
+            className="btn-primary-solid w-11 h-11 rounded-xl"
             onClick={handleAddToCart}
           >
             <ShoppingCart className="w-5 h-5" />
