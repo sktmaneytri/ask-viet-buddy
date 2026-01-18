@@ -3,6 +3,7 @@ import { Product } from '@/types/product';
 import { useCart } from '@/hooks/useCart';
 import { Button } from '@/components/ui/button';
 import { toast } from 'sonner';
+import { useNavigate } from 'react-router-dom';
 
 interface ProductCardProps {
   product: Product;
@@ -17,8 +18,10 @@ const formatPrice = (price: number) => {
 
 const ProductCard = ({ product }: ProductCardProps) => {
   const { addToCart } = useCart();
+  const navigate = useNavigate();
 
-  const handleAddToCart = () => {
+  const handleAddToCart = (e: React.MouseEvent) => {
+    e.stopPropagation();
     if (!product.inStock) {
       toast.error(`${product.name} hiện đã hết hàng!`);
       return;
@@ -27,12 +30,19 @@ const ProductCard = ({ product }: ProductCardProps) => {
     toast.success(`Đã thêm ${product.name} vào giỏ hàng!`);
   };
 
+  const handleCardClick = () => {
+    navigate(`/product/${product.id}`);
+  };
+
   const discount = product.originalPrice
     ? Math.round((1 - product.price / product.originalPrice) * 100)
     : 0;
 
   return (
-    <div className={`card-glass card-hover overflow-hidden group ${!product.inStock ? 'opacity-70' : ''}`}>
+    <div 
+      className={`card-glass card-hover overflow-hidden group cursor-pointer ${!product.inStock ? 'opacity-70' : ''}`}
+      onClick={handleCardClick}
+    >
       {/* Image */}
       <div className="relative aspect-square overflow-hidden bg-secondary">
         <img
@@ -62,7 +72,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
 
       {/* Content */}
       <div className="p-5">
-        <h3 className="font-semibold text-lg mb-1 line-clamp-1 group-hover:text-muted-foreground transition-colors">
+        <h3 className="font-semibold text-lg mb-1 line-clamp-1 group-hover:text-primary transition-colors">
           {product.name}
         </h3>
         
