@@ -63,7 +63,7 @@ export const products: Product[] = [
     category: 'airpods',
     brand: 'Hàng replica',
     price: 280000,
-    image: 'https://images.unsplash.com/photo-1603351154351-5e2d0600bb77?w=400&h=400&fit=crop',
+    image: 'https://pakistanstore.pk/wp-content/uploads/2022/12/Apple-AirPods-Pro-2-ANC-Copy.jpg',
     description: 'AirPods Pro 2 với chip H2 mới, chống ồn gấp đôi',
     specifications: ['Chip H2', 'Chống ồn 2x', 'Âm thanh không gian', 'Adaptive Audio'],
     inStock: true,
