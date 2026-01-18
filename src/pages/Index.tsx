@@ -5,6 +5,7 @@ import ProductSection from '@/components/ProductSection';
 import TestimonialSection from '@/components/TestimonialSection';
 import Footer from '@/components/Footer';
 import ChatSupport from '@/components/ChatSupport';
+import { DailyDealsSection } from '@/components/DailyDealsSection';
 
 const Index = () => {
   return (
@@ -12,6 +13,7 @@ const Index = () => {
       <Header />
       <main>
         <HeroSection />
+        <DailyDealsSection />
         <CategorySection />
         <ProductSection
           categoryId="airpods"
