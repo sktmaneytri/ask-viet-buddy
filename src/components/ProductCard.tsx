@@ -19,6 +19,10 @@ const ProductCard = ({ product }: ProductCardProps) => {
   const { addToCart } = useCart();
 
   const handleAddToCart = () => {
+    if (!product.inStock) {
+      toast.error(`${product.name} hiện đã hết hàng!`);
+      return;
+    }
     addToCart(product);
     toast.success(`Đã thêm ${product.name} vào giỏ hàng!`);
   };
@@ -28,16 +32,24 @@ const ProductCard = ({ product }: ProductCardProps) => {
     : 0;
 
   return (
-    <div className="card-glass card-hover overflow-hidden group">
+    <div className={`card-glass card-hover overflow-hidden group ${!product.inStock ? 'opacity-70' : ''}`}>
       {/* Image */}
       <div className="relative aspect-square overflow-hidden bg-secondary">
         <img
           src={product.image}
           alt={product.name}
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+          className={`w-full h-full object-cover transition-transform duration-500 ${product.inStock ? 'group-hover:scale-110' : 'grayscale'}`}
         />
         
-        {discount > 0 && (
+        {!product.inStock && (
+          <div className="absolute inset-0 bg-background/60 flex items-center justify-center">
+            <span className="bg-destructive text-destructive-foreground px-4 py-2 rounded-lg font-bold text-lg">
+              HẾT HÀNG
+            </span>
+          </div>
+        )}
+        
+        {discount > 0 && product.inStock && (
           <div className="absolute top-3 left-3 px-2 py-1 bg-primary text-primary-foreground text-xs font-bold rounded-lg">
             -{discount}%
           </div>
@@ -84,8 +96,10 @@ const ProductCard = ({ product }: ProductCardProps) => {
 
           <Button
             size="icon"
-            className="btn-primary-solid w-11 h-11 rounded-xl"
+            className="w-11 h-11 rounded-xl"
             onClick={handleAddToCart}
+            disabled={!product.inStock}
+            variant={product.inStock ? "default" : "secondary"}
           >
             <ShoppingCart className="w-5 h-5" />
           </Button>

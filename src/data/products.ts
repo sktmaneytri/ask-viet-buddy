@@ -53,7 +53,7 @@ export const products: Product[] = [
     image: 'https://images.unsplash.com/photo-1580477371194-4593e3c7c6cf?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     description: 'AirPods Pro với chống ồn chủ động và chế độ xuyên âm',
     specifications: ['Chống ồn chủ động', 'Chế độ xuyên âm', 'Chống nước IPX4', 'Chip H1'],
-    inStock: true,
+    inStock: false, // HẾT HÀNG
     rating: 4.9,
     reviews: 512
   },
@@ -80,12 +80,12 @@ export const products: Product[] = [
     image: 'https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?w=400&h=400&fit=crop',
     description: 'AirPods thế hệ 3 với thiết kế công thái học, nhỏ gọn thoải mái cho tai',
     specifications: ['Chip H1', 'Âm thanh không gian', 'Chống nước IPX4', 'Pin 6 giờ'],
-    inStock: true,
+    inStock: false, // HẾT HÀNG
     rating: 4.8,
     reviews: 256
   },
 
-  // Speakers
+  // Speakers - TẤT CẢ HẾT HÀNG
   {
     id: 'jbl-flip-6',
     name: 'JBL Flip 6',
@@ -96,7 +96,7 @@ export const products: Product[] = [
     image: 'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400&h=400&fit=crop',
     description: 'Loa bluetooth JBL Flip 6 với âm bass mạnh mẽ, chống nước IP67',
     specifications: ['Công suất 30W', 'Pin 12 giờ', 'Chống nước IP67', 'PartyBoost'],
-    inStock: true,
+    inStock: false, // HẾT HÀNG
     rating: 4.8,
     reviews: 892
   },
@@ -109,7 +109,7 @@ export const products: Product[] = [
     image: 'https://images.unsplash.com/photo-1545454675-3531b543be5d?w=400&h=400&fit=crop',
     description: 'Loa Marshall Emberton II thiết kế cổ điển, âm thanh đỉnh cao',
     specifications: ['Công suất 20W', 'Pin 30 giờ', 'Chống nước IP67', 'Bluetooth 5.1'],
-    inStock: true,
+    inStock: false, // HẾT HÀNG
     rating: 4.9,
     reviews: 456
   },
@@ -123,7 +123,7 @@ export const products: Product[] = [
     image: 'https://images.unsplash.com/photo-1558089687-f282ffcbc126?w=400&h=400&fit=crop',
     description: 'Loa Bose SoundLink Flex siêu bền, âm thanh Bose đặc trưng',
     specifications: ['PositionIQ', 'Pin 12 giờ', 'Chống nước IP67', 'Chống va đập'],
-    inStock: true,
+    inStock: false, // HẾT HÀNG
     rating: 4.7,
     reviews: 345
   },
@@ -137,7 +137,7 @@ export const products: Product[] = [
     image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop',
     description: 'Loa Anker Soundcore Motion+ Hi-Res Audio, bass cực mạnh',
     specifications: ['Công suất 30W', 'Hi-Res Audio', 'Pin 12 giờ', 'BassUp'],
-    inStock: true,
+    inStock: false, // HẾT HÀNG
     rating: 4.6,
     reviews: 1234
   },
