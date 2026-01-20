@@ -39,15 +39,18 @@ export const products: Product[] = [
     image: 'https://media.istockphoto.com/id/2237358070/vi/anh/tai-nghe-kh%C3%B4ng-d%C3%A2y-hi%E1%BB%87n-%C4%91%E1%BA%A1i-m%C3%A0u-tr%E1%BA%AFng-b%E1%BB%8B-c%C3%B4-l%E1%BA%ADp-tr%C3%AAn-n%E1%BB%81n-tr%E1%BA%AFng-sao-ch%C3%A9p-kh%C3%B4ng-gian.jpg?s=2048x2048&w=is&k=20&c=S77IzExYDkGCuEIVCNl9lI89yDpagM54mvKI1ji4iE0=',
     images: [
       'https://media.istockphoto.com/id/2237358070/vi/anh/tai-nghe-kh%C3%B4ng-d%C3%A2y-hi%E1%BB%87n-%C4%91%E1%BA%A1i-m%C3%A0u-tr%E1%BA%AFng-b%E1%BB%8B-c%C3%B4-l%E1%BA%ADp-tr%C3%AAn-n%E1%BB%81n-tr%E1%BA%AFng-sao-ch%C3%A9p-kh%C3%B4ng-gian.jpg?s=2048x2048&w=is&k=20&c=S77IzExYDkGCuEIVCNl9lI89yDpagM54mvKI1ji4iE0=',
-      'https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?w=400&h=400&fit=crop',
-      'https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=400&h=400&fit=crop',
-      'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400&h=400&fit=crop'
+      'https://onewaymobile.vn/images/products/2024/09/10/original/1.png',
+      'https://onewaymobile.vn/images/products/2024/09/10/original/2.png',
+      'https://onewaymobile.vn/images/products/2024/09/10/original/3.png',
+      'https://onewaymobile.vn/images/products/2024/09/10/original/4.png',
+      'https://onewaymobile.vn/images/products/2024/09/10/original/5.png',
+      'https://onewaymobile.vn/images/products/2024/09/10/original/8.png',
     ],
     description: 'AirPods 4 ANC mới nhất với thiết kế cải tiến và âm thanh vượt trội - công nghệ chống ồn chủ động',
     specifications: ['Chip A12', 'Chống ồn chủ động ANC', 'Thiết kế mới', 'Pin 5 giờ', 'Sạc USB-C'],
     inStock: true,
     rating: 4.9,
-    reviews: 128
+    reviews: 18
   },
   {
     id: 'airpods-pro',
@@ -59,14 +62,15 @@ export const products: Product[] = [
     image: 'https://images.unsplash.com/photo-1580477371194-4593e3c7c6cf?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     images: [
       'https://images.unsplash.com/photo-1580477371194-4593e3c7c6cf?q=80&w=1170&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1588423771073-b8903fbb85b5?w=400&h=400&fit=crop',
-      'https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?w=400&h=400&fit=crop'
+      'https://apple.ngocnguyen.vn/cdn/images/202403/goods_img/tai-nghe-bluetooth-airpods-pro-2-type-c-brand-new-100-P15568-1710074772380.jpg',
+      'https://apple.ngocnguyen.vn/cdn/images/202403/goods_img/tai-nghe-bluetooth-airpods-pro-2-type-c-brand-new-100-P15568-1710074772380.jpg',
+      'https://apple.ngocnguyen.vn/cdn/images/202408/goods_img/tai-nghe-bluetooth-airpods-pro-2-type-c-brand-new-100-P15568-1722589129812.png'
     ],
     description: 'AirPods Pro với chống ồn chủ động và chế độ xuyên âm',
     specifications: ['Chống ồn chủ động', 'Chế độ xuyên âm', 'Chống nước IPX4', 'Chip H1'],
     inStock: false,
     rating: 4.9,
-    reviews: 512
+    reviews: 52
   },
   {
     id: 'airpods-pro-2',
@@ -77,14 +81,15 @@ export const products: Product[] = [
     image: 'https://pakistanstore.pk/wp-content/uploads/2022/12/Apple-AirPods-Pro-2-ANC-Copy.jpg',
     images: [
       'https://pakistanstore.pk/wp-content/uploads/2022/12/Apple-AirPods-Pro-2-ANC-Copy.jpg',
-      'https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=400&h=400&fit=crop',
-      'https://images.unsplash.com/photo-1610438235354-a6ae5528385c?w=400&h=400&fit=crop'
+      'https://onewaymobile.vn/images/products/2022/09/09/original/airpod-pro-2022-1.png',
+      'https://onewaymobile.vn/images/products/2022/09/09/original/airpod-pro-2022-3.png',
+      'https://onewaymobile.vn/images/products/2022/09/09/original/airpod-pro-2022-5.png',
     ],
     description: 'AirPods Pro 2 với chip H2 mới, chống ồn gấp đôi',
     specifications: ['Chip H2', 'Chống ồn 2x', 'Âm thanh không gian', 'Adaptive Audio'],
     inStock: true,
     rating: 5.0,
-    reviews: 324
+    reviews: 24
   },
   {
     id: 'airpods-3',
@@ -102,7 +107,7 @@ export const products: Product[] = [
     specifications: ['Chip H1', 'Âm thanh không gian', 'Chống nước IPX4', 'Pin 6 giờ'],
     inStock: false,
     rating: 4.8,
-    reviews: 256
+    reviews: 56
   },
 
   // Speakers - TẤT CẢ HẾT HÀNG
@@ -131,7 +136,7 @@ export const products: Product[] = [
     specifications: ['Công suất 20W', 'Pin 30 giờ', 'Chống nước IP67', 'Bluetooth 5.1'],
     inStock: false, // HẾT HÀNG
     rating: 4.9,
-    reviews: 456
+    reviews: 56
   },
   {
     id: 'bose-soundlink',
@@ -145,7 +150,7 @@ export const products: Product[] = [
     specifications: ['PositionIQ', 'Pin 12 giờ', 'Chống nước IP67', 'Chống va đập'],
     inStock: false, // HẾT HÀNG
     rating: 4.7,
-    reviews: 345
+    reviews: 45
   },
   {
     id: 'philips-tas2108',
@@ -159,7 +164,7 @@ export const products: Product[] = [
     specifications: ['Công suất 30W', 'Hi-Res Audio', 'Pin 12 giờ', 'BassUp'],
     inStock: false, // HẾT HÀNG
     rating: 4.6,
-    reviews: 1234
+    reviews: 34
   },
 
   // Củ sạc iPhone < 15
@@ -175,7 +180,7 @@ export const products: Product[] = [
     specifications: ['Công suất 20W', 'Cổng USB-C', 'Sạc nhanh', 'Chính hãng Apple'],
     inStock: true,
     rating: 4.8,
-    reviews: 890
+    reviews: 90
   },
   {
     id: 'anker-zolo-20w',
@@ -190,7 +195,7 @@ export const products: Product[] = [
     specifications: ['Công suất 20W', 'PowerIQ 3.0', 'Siêu nhỏ gọn', 'An toàn MultiProtect'],
     inStock: true,
     rating: 4.7,
-    reviews: 1256
+    reviews: 156
   },
 
   // Củ sạc iPhone 15+
@@ -206,7 +211,7 @@ export const products: Product[] = [
     specifications: ['Công suất 30W', '2 cổng USB-C', 'Sạc 2 thiết bị', 'Chính hãng ANKER'],
     inStock: true,
     rating: 4.9,
-    reviews: 234
+    reviews: 34
   },
   {
     id: 'remax-rp-u115',
@@ -221,7 +226,7 @@ export const products: Product[] = [
     specifications: ['Công suất 20W', 'GaN II', 'ActiveShield 2.0'],
     inStock: true,
     rating: 4.8,
-    reviews: 567
+    reviews: 67
   },
 
   // Cáp sạc
@@ -236,7 +241,7 @@ export const products: Product[] = [
     specifications: ['Dài 1.5m', 'USB-C to Lightning', 'Sạc nhanh', 'Chính hãng'],
     inStock: true,
     rating: 4.7,
-    reviews: 1890
+    reviews: 90
   },
   {
     id: 'apple-usbc-usbc',
@@ -249,7 +254,7 @@ export const products: Product[] = [
     specifications: ['Dài 1.5m', 'USB-C to USB-C', 'Hỗ trợ 60W', 'Chính hãng'],
     inStock: true,
     rating: 4.8,
-    reviews: 456
+    reviews: 56
   },
   {
     id: 'anker-usbc-lightning',
@@ -263,7 +268,7 @@ export const products: Product[] = [
     specifications: ['Dài 1.8m', 'MFi certified', 'Bền 35.000 lần gập', 'Sạc nhanh'],
     inStock: true,
     rating: 4.6,
-    reviews: 2345
+    reviews: 45
   },
   {
     id: 'anker-usbc-usbc-2m',
@@ -276,7 +281,7 @@ export const products: Product[] = [
     specifications: ['Dài 2m', 'USB-C to USB-C', '100W PD', 'Vỏ bọc nylon'],
     inStock: true,
     rating: 4.7,
-    reviews: 789
+    reviews: 89
   }
 ];
 
