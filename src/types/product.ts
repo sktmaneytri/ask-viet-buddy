@@ -10,6 +10,7 @@ export interface Product {
   images?: string[]; // Multiple images for gallery
   description: string;
   specifications?: string[];
+  videoUrl?: string; // YouTube video URL
   inStock: boolean;
   rating: number;
   reviews: number;

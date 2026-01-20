@@ -47,6 +47,7 @@ export const products: Product[] = [
       'https://onewaymobile.vn/images/products/2024/09/10/original/8.png',
     ],
     description: 'AirPods 4 ANC mới nhất với thiết kế cải tiến và âm thanh vượt trội - công nghệ chống ồn chủ động',
+    videoUrl:'https://youtu.be/UIbageHlhiM',
     specifications: ['Chip A12', 'Chống ồn chủ động ANC', 'Thiết kế mới', 'Pin 5 giờ', 'Sạc USB-C'],
     inStock: true,
     rating: 4.9,
@@ -66,6 +67,7 @@ export const products: Product[] = [
       'https://apple.ngocnguyen.vn/cdn/images/202403/goods_img/tai-nghe-bluetooth-airpods-pro-2-type-c-brand-new-100-P15568-1710074772380.jpg',
       'https://apple.ngocnguyen.vn/cdn/images/202408/goods_img/tai-nghe-bluetooth-airpods-pro-2-type-c-brand-new-100-P15568-1722589129812.png'
     ],
+    videoUrl:'https://youtu.be/UIbageHlhiM',
     description: 'AirPods Pro với chống ồn chủ động và chế độ xuyên âm',
     specifications: ['Chống ồn chủ động', 'Chế độ xuyên âm', 'Chống nước IPX4', 'Chip H1'],
     inStock: false,
@@ -85,6 +87,7 @@ export const products: Product[] = [
       'https://onewaymobile.vn/images/products/2022/09/09/original/airpod-pro-2022-3.png',
       'https://onewaymobile.vn/images/products/2022/09/09/original/airpod-pro-2022-5.png',
     ],
+    videoUrl:'https://youtu.be/I57ts3y1QEE',
     description: 'AirPods Pro 2 với chip H2 mới, chống ồn gấp đôi',
     specifications: ['Chip H2', 'Chống ồn 2x', 'Âm thanh không gian', 'Adaptive Audio'],
     inStock: true,

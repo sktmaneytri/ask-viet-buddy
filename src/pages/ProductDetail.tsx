@@ -171,6 +171,26 @@ const ProductDetail = () => {
               </div>
             )}
 
+            {/* Video */}
+            {product.videoUrl && (
+              <div className="mb-8">
+                <h3 className="font-semibold text-lg mb-3">📹 Video sản phẩm:</h3>
+                <iframe
+                  width="100%"
+                  height="315"
+                  src={product.videoUrl.includes('youtube.com') || product.videoUrl.includes('youtu.be') 
+                    ? product.videoUrl.replace('watch?v=', 'embed/').replace('youtu.be/', 'youtube.com/embed/')
+                    : product.videoUrl
+                  }
+                  title={product.name}
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="rounded-xl"
+                />
+              </div>
+            )}
+
             {/* Price */}
             <div className="mb-6">
               <div className="flex items-baseline gap-3">
