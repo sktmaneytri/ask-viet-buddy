@@ -106,7 +106,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
 
           <Button
             size="icon"
-            className="w-11 h-11 rounded-xl"
+            className="w-11 h-11 md:w-11 md:h-11 sm:w-12 sm:h-12 rounded-xl"
             onClick={handleAddToCart}
             disabled={!product.inStock}
             variant={product.inStock ? "default" : "secondary"}

@@ -215,10 +215,9 @@ const ProductDetail = () => {
               </div>
               
               <Button
-                size="lg"
                 onClick={handleAddToCart}
                 disabled={!product.inStock}
-                className="flex-1 rounded-xl h-12"
+                className="flex-1 rounded-xl h-14 sm:h-12 bg-primary text-primary-foreground hover:bg-primary/90 px-8"
               >
                 <ShoppingCart className="w-5 h-5 mr-2" />
                 {product.inStock ? 'Thêm vào giỏ hàng' : 'Hết hàng'}

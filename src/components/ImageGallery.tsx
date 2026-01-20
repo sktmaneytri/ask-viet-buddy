@@ -11,8 +11,6 @@ interface ImageGalleryProps {
 
 const ImageGallery = ({ images, productName, inStock, discount = 0 }: ImageGalleryProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isZooming, setIsZooming] = useState(false);
-  const [zoomPosition, setZoomPosition] = useState({ x: 0, y: 0 });
   const imageContainerRef = useRef<HTMLDivElement>(null);
 
   const goToPrevious = () => {
@@ -23,41 +21,17 @@ const ImageGallery = ({ images, productName, inStock, discount = 0 }: ImageGalle
     setCurrentIndex(prev => (prev === images.length - 1 ? 0 : prev + 1));
   };
 
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (!imageContainerRef.current || !inStock) return;
-    
-    const rect = imageContainerRef.current.getBoundingClientRect();
-    const x = ((e.clientX - rect.left) / rect.width) * 100;
-    const y = ((e.clientY - rect.top) / rect.height) * 100;
-    
-    setZoomPosition({ x, y });
-  };
-
-  const handleMouseEnter = () => {
-    if (inStock) setIsZooming(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsZooming(false);
-  };
-
   return (
     <div className="relative">
       {/* Main Image Container */}
       <div 
         ref={imageContainerRef}
-        className={`aspect-square rounded-2xl overflow-hidden bg-secondary relative cursor-crosshair ${!inStock ? 'opacity-70 cursor-not-allowed' : ''}`}
-        onMouseMove={handleMouseMove}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
+        className={`aspect-square rounded-2xl overflow-hidden bg-secondary relative cursor-default ${!inStock ? 'opacity-70' : ''}`}
       >
         <img
           src={images[currentIndex]}
           alt={`${productName} - Hình ${currentIndex + 1}`}
-          className={`w-full h-full object-cover transition-transform duration-200 ${!inStock ? 'grayscale' : ''} ${isZooming ? 'scale-150' : ''}`}
-          style={isZooming ? {
-            transformOrigin: `${zoomPosition.x}% ${zoomPosition.y}%`
-          } : undefined}
+          className={`w-full h-full object-cover transition-transform duration-200 ${!inStock ? 'grayscale' : ''}`}
         />
         
         {/* Out of Stock Overlay */}
@@ -102,13 +76,6 @@ const ImageGallery = ({ images, productName, inStock, discount = 0 }: ImageGalle
               <ChevronRight className="w-5 h-5" />
             </Button>
           </>
-        )}
-
-        {/* Zoom Hint */}
-        {inStock && !isZooming && (
-          <div className="absolute bottom-4 right-4 bg-background/80 backdrop-blur-sm px-3 py-1 rounded-full text-sm text-muted-foreground">
-            🔍 Di chuột để zoom
-          </div>
         )}
       </div>
 
