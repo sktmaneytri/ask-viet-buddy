@@ -19,6 +19,7 @@ import { useState, useEffect } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ProductCard from '@/components/ProductCard';
+import ImageGallery from '@/components/ImageGallery';
 
 const formatPrice = (price: number) => {
   return new Intl.NumberFormat('vi-VN', {
@@ -112,29 +113,14 @@ const ProductDetail = () => {
 
         {/* Product Details */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-          {/* Product Image */}
-          <div className="relative">
-            <div className={`aspect-square rounded-2xl overflow-hidden bg-secondary ${!product.inStock ? 'opacity-70' : ''}`}>
-              <img
-                src={product.image}
-                alt={product.name}
-                className={`w-full h-full object-cover ${!product.inStock ? 'grayscale' : ''}`}
-              />
-              
-              {!product.inStock && (
-                <div className="absolute inset-0 bg-background/60 flex items-center justify-center">
-                  <span className="bg-destructive text-destructive-foreground px-6 py-3 rounded-xl font-bold text-2xl">
-                    HẾT HÀNG
-                  </span>
-                </div>
-              )}
-              
-              {discount > 0 && product.inStock && (
-                <Badge className="absolute top-4 left-4 bg-primary text-primary-foreground text-lg px-3 py-1">
-                  -{discount}%
-                </Badge>
-              )}
-            </div>
+          {/* Product Image Gallery */}
+          <div className="group">
+            <ImageGallery
+              images={product.images || [product.image]}
+              productName={product.name}
+              inStock={product.inStock}
+              discount={discount}
+            />
           </div>
 
           {/* Product Info */}

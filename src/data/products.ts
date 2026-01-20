@@ -37,6 +37,12 @@ export const products: Product[] = [
     price: 300000,
     originalPrice: 599000,
     image: 'https://media.istockphoto.com/id/2237358070/vi/anh/tai-nghe-kh%C3%B4ng-d%C3%A2y-hi%E1%BB%87n-%C4%91%E1%BA%A1i-m%C3%A0u-tr%E1%BA%AFng-b%E1%BB%8B-c%C3%B4-l%E1%BA%ADp-tr%C3%AAn-n%E1%BB%81n-tr%E1%BA%AFng-sao-ch%C3%A9p-kh%C3%B4ng-gian.jpg?s=2048x2048&w=is&k=20&c=S77IzExYDkGCuEIVCNl9lI89yDpagM54mvKI1ji4iE0=',
+    images: [
+      'https://media.istockphoto.com/id/2237358070/vi/anh/tai-nghe-kh%C3%B4ng-d%C3%A2y-hi%E1%BB%87n-%C4%91%E1%BA%A1i-m%C3%A0u-tr%E1%BA%AFng-b%E1%BB%8B-c%C3%B4-l%E1%BA%ADp-tr%C3%AAn-n%E1%BB%81n-tr%E1%BA%AFng-sao-ch%C3%A9p-kh%C3%B4ng-gian.jpg?s=2048x2048&w=is&k=20&c=S77IzExYDkGCuEIVCNl9lI89yDpagM54mvKI1ji4iE0=',
+      'https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?w=400&h=400&fit=crop',
+      'https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=400&h=400&fit=crop',
+      'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400&h=400&fit=crop'
+    ],
     description: 'AirPods 4 ANC mới nhất với thiết kế cải tiến và âm thanh vượt trội - công nghệ chống ồn chủ động',
     specifications: ['Chip A12', 'Chống ồn chủ động ANC', 'Thiết kế mới', 'Pin 5 giờ', 'Sạc USB-C'],
     inStock: true,
@@ -51,9 +57,14 @@ export const products: Product[] = [
     price: 250000,
     originalPrice: 350000,
     image: 'https://images.unsplash.com/photo-1580477371194-4593e3c7c6cf?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    images: [
+      'https://images.unsplash.com/photo-1580477371194-4593e3c7c6cf?q=80&w=1170&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1588423771073-b8903fbb85b5?w=400&h=400&fit=crop',
+      'https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?w=400&h=400&fit=crop'
+    ],
     description: 'AirPods Pro với chống ồn chủ động và chế độ xuyên âm',
     specifications: ['Chống ồn chủ động', 'Chế độ xuyên âm', 'Chống nước IPX4', 'Chip H1'],
-    inStock: false, // HẾT HÀNG
+    inStock: false,
     rating: 4.9,
     reviews: 512
   },
@@ -64,6 +75,11 @@ export const products: Product[] = [
     brand: 'Hàng replica',
     price: 280000,
     image: 'https://pakistanstore.pk/wp-content/uploads/2022/12/Apple-AirPods-Pro-2-ANC-Copy.jpg',
+    images: [
+      'https://pakistanstore.pk/wp-content/uploads/2022/12/Apple-AirPods-Pro-2-ANC-Copy.jpg',
+      'https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=400&h=400&fit=crop',
+      'https://images.unsplash.com/photo-1610438235354-a6ae5528385c?w=400&h=400&fit=crop'
+    ],
     description: 'AirPods Pro 2 với chip H2 mới, chống ồn gấp đôi',
     specifications: ['Chip H2', 'Chống ồn 2x', 'Âm thanh không gian', 'Adaptive Audio'],
     inStock: true,
@@ -78,9 +94,13 @@ export const products: Product[] = [
     price: 250000,
     originalPrice: 499000,
     image: 'https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?w=400&h=400&fit=crop',
+    images: [
+      'https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?w=400&h=400&fit=crop',
+      'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400&h=400&fit=crop'
+    ],
     description: 'AirPods thế hệ 3 với thiết kế công thái học, nhỏ gọn thoải mái cho tai',
     specifications: ['Chip H1', 'Âm thanh không gian', 'Chống nước IPX4', 'Pin 6 giờ'],
-    inStock: false, // HẾT HÀNG
+    inStock: false,
     rating: 4.8,
     reviews: 256
   },
