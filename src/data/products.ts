@@ -31,7 +31,7 @@ export const products: Product[] = [
   // AirPods
   {
     id: 'airpods-4',
-    name: 'AirPods 4',
+    name: 'Tai nghe Bluetooth AP4',
     category: 'airpods',
     brand: 'Hàng replica',
     price: 300000,
@@ -46,16 +46,16 @@ export const products: Product[] = [
       'https://onewaymobile.vn/images/products/2024/09/10/original/5.png',
       'https://onewaymobile.vn/images/products/2024/09/10/original/8.png',
     ],
-    description: 'AirPods 4 ANC mới nhất với thiết kế cải tiến và âm thanh vượt trội - công nghệ chống ồn chủ động',
+    description: 'AP 4 ANC mới nhất với thiết kế cải tiến và âm thanh vượt trội - công nghệ chống ồn chủ động. Kết nối được với mọi thiết bị Bluetooth từ android, iPhone, iPad, laptop. Chất âm bass giống bản auth 95%. Tai nghe nhỏ gọn đau không bị đau tai, phù hợp với mọi đối tượng sử dụng.',
     videoUrl:'https://youtu.be/UIbageHlhiM',
-    specifications: ['Chip A12', 'Chống ồn chủ động ANC', 'Thiết kế mới', 'Pin 5 giờ', 'Sạc USB-C'],
+    specifications: ['Chip A12', 'Chống ồn chủ động ANC', 'Thiết kế mới', 'Pin 5 giờ', 'Sạc USB-C', '2 lần chạm'],
     inStock: true,
     rating: 4.9,
     reviews: 18
   },
   {
     id: 'airpods-pro',
-    name: 'AirPods Pro',
+    name: 'Tai nghe Bluetooth AP Pro',
     category: 'airpods',
     brand: 'Hàng replica',
     price: 250000,
@@ -76,27 +76,27 @@ export const products: Product[] = [
   },
   {
     id: 'airpods-pro-2',
-    name: 'AirPods Pro 2',
+    name: 'Tai nghe Bluetooth AP Pro 2',
     category: 'airpods',
     brand: 'Hàng replica',
     price: 280000,
-    image: 'https://pakistanstore.pk/wp-content/uploads/2022/12/Apple-AirPods-Pro-2-ANC-Copy.jpg',
+    image: 'https://www.duchuymobile.com/images/detailed/88/airpods-pro-gen-2-magsafe-charge-usb-c-trang.jpg',
     images: [
       'https://pakistanstore.pk/wp-content/uploads/2022/12/Apple-AirPods-Pro-2-ANC-Copy.jpg',
       'https://onewaymobile.vn/images/products/2022/09/09/original/airpod-pro-2022-1.png',
       'https://onewaymobile.vn/images/products/2022/09/09/original/airpod-pro-2022-3.png',
       'https://onewaymobile.vn/images/products/2022/09/09/original/airpod-pro-2022-5.png',
     ],
-    videoUrl:'https://youtu.be/I57ts3y1QEE',
-    description: 'AirPods Pro 2 với chip H2 mới, chống ồn gấp đôi',
-    specifications: ['Chip H2', 'Chống ồn 2x', 'Âm thanh không gian', 'Adaptive Audio'],
+    videoUrl:'https://youtu.be/mDt3_DXMHMM',
+    description: 'AirPods Pro 2 là dòng tai nghe blutooth thế hệ mới, được nâng cấp từ phiên bản cũ với nhiều tính năng vượt trội, chất lượng âm bass gần bằng 90% so với bản authentic. Kết nối với mọi dòng thiết bị từ android iPhone iPad, laptop đều được hỗ trợ.',
+    specifications: ['Chip H2', 'Chống ồn 2x', 'Âm thanh không gian', 'Adaptive Audio', 'Kết nối đa thiết bị', 'Pin 6 giờ'],
     inStock: true,
     rating: 5.0,
     reviews: 24
   },
   {
     id: 'airpods-3',
-    name: 'AirPods 3',
+    name: 'Tai nghe Bluetooth AP 3',
     category: 'airpods',
     brand: 'Hàng replica',
     price: 250000,
@@ -113,7 +113,71 @@ export const products: Product[] = [
     reviews: 56
   },
 
-  // Speakers - TẤT CẢ HẾT HÀNG
+  // Speakers
+  {
+    id: 'remax-m81',
+    name: 'Loa Bluetooth Remax RB M81',
+    category: 'speaker',
+    brand: 'Remax',
+    price: 359000,
+    originalPrice: 490000,
+    image: 'https://manager.remaxvietnam.vn/asset/images/SanPham/phukiendienthoai/loabluetooth/RB-M81/avatar-rb-m81-08012025.png',
+    description: 'Loa Bluetooth Remax RB-M81 là một lựa chọn lý tưởng cho những ai đang tìm kiếm một thiết bị âm thanh di động nhỏ gọn nhưng mạnh mẽ. Với thiết kế hiện đại và tính năng đa dạng, loa này mang đến trải nghiệm nghe nhạc tuyệt vời ở bất cứ đâu.',
+    specifications: ['Loa dưới 1 triệu', 'Pin 5 giờ', 'Chống nước IP67', 'Chống va đập'],
+    images: [
+      'https://manager.remaxvietnam.vn/asset/images/SanPham/phukiendienthoai/loabluetooth/RB-M81/avatar-rb-m81-08012025.png',
+      'https://manager.remaxvietnam.vn/asset/images/SanPham/phukiendienthoai/loabluetooth/RB-M81/slide/loa-bluetooth-remax-rb-m81-2-08012025.jpg',
+      'https://manager.remaxvietnam.vn/asset/images/SanPham/phukiendienthoai/loabluetooth/RB-M81/slide/loa-bluetooth-remax-rb-m81-3-08012025.jpg',
+      'https://manager.remaxvietnam.vn/asset/images/SanPham/phukiendienthoai/loabluetooth/RB-M81/slide/loa-bluetooth-remax-rb-m81-4-08012025.jpg',
+      'https://manager.remaxvietnam.vn/asset/images/SanPham/phukiendienthoai/loabluetooth/RB-M81/slide/loa-bluetooth-remax-rb-m81-6-08012025.jpg'
+    ],
+    inStock: true,
+    videoUrl:'https://www.youtube.com/watch?v=xpUtVq8jvag',
+    rating: 4.7,
+    reviews: 45
+  },
+  {
+    id: 'remax-m82',
+    name: 'Loa Bluetooth Remax RB-M82',
+    category: 'speaker',
+    brand: 'Remax',
+    price: 559000,
+    originalPrice: 790000,
+    image: 'https://manager.remaxvietnam.vn/asset/images/SanPham/phukiendienthoai/loabluetooth/RB-M82/avatar-rb-m82-08012025.png',
+    description: 'Remax RB-M82 là một chiếc loa Bluetooth di động nổi bật, kết hợp giữa thiết kế tinh tế và hiệu suất ấn tượng. Với hai loa toàn dải 52mm, sản phẩm mang đến chất lượng âm thanh vượt trội, đáp ứng nhu cầu nghe nhạc đa dạng của người dùng.',
+    specifications: ['Loa dưới 1 triệu', 'Pin 7 giờ', 'Chống nước IP67', 'Chống va đập'],
+    images: [
+      'https://manager.remaxvietnam.vn/asset/images/SanPham/phukiendienthoai/loabluetooth/RB-M82/avatar-rb-m82-08012025.png',
+      'https://manager.remaxvietnam.vn/asset/images/SanPham/phukiendienthoai/loabluetooth/RB-M82/slide/loa-bluetooth-remax-rb-m82-1-08012025.jpg',
+      'https://manager.remaxvietnam.vn/asset/images/SanPham/phukiendienthoai/loabluetooth/RB-M82/slide/loa-bluetooth-remax-rb-m82-3-08012025.jpg',
+      'https://manager.remaxvietnam.vn/asset/images/SanPham/phukiendienthoai/loabluetooth/RB-M82/slide/loa-bluetooth-remax-rb-m82-4-08012025.jpg',
+      'https://manager.remaxvietnam.vn/asset/images/SanPham/phukiendienthoai/loabluetooth/RB-M82/slide/loa-bluetooth-remax-rb-m82-6-08012025.jpg'
+    ],
+    inStock: true,
+    videoUrl:'https://youtu.be/UIbageHlhiM',
+    rating: 4.7,
+    reviews: 45
+  },
+  {
+    id: 'remax-m21',
+    name: 'Loa Bluetooth REMAX Wireless Lighting Portable Speaker RB-M21',
+    category: 'speaker',
+    brand: 'Remax',
+    price: 459000,
+    originalPrice: 590000,
+    image: 'https://pos.nvncdn.com/cbc6e2-167100/ps/20250804_jp3nrmh4P0.jpeg?v=1754272510',
+    description: 'Remax RB-M21 là một chiếc loa Bluetooth di động nổi bật, kết hợp giữa thiết kế tinh tế và hiệu suất ấn tượng. Thiết kế lon cola thú vị, thiết kế vừa lòng bàn tay hoàn hảo để làm giá để cốc trên ô tô và dễ cầm, tô điểm thêm màu sắc cho cuộc sống của bạn. 4 chế độ chiếu sáng, hiệu ứng ánh sáng RGB rực rỡ, đồng bộ với âm nhạc của bạn, không chỉ nghe nhạc mà còn là một bữa tiệc ánh sáng.',
+    specifications: ['Loa dưới 1 triệu', 'Pin 7 giờ', 'Chống nước IP67', 'Chống va đập', 'Chế độ TWS', ],
+    images: [
+      'https://pos.nvncdn.com/cbc6e2-167100/ps/20250804_jp3nrmh4P0.jpeg?v=1754272510',
+      'https://linhkienlammusic.com/wp-content/uploads/2025/07/image-3-768x768.jpg',
+      'https://iamcreative.ch/wp-content/uploads/2025/11/1000-1665_REMAX-Tragbarer-Lautsprecher-mit-Partylicht-86x146-mm-5-W.jpg'
+    ],
+    inStock: true,
+    videoUrl:'https://www.youtube.com/watch?v=a_0s1as5P9g',
+    rating: 4.7,
+    reviews: 45
+  },
   {
     id: 'jbl-flip-6',
     name: 'JBL Flip 6',
