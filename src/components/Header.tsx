@@ -1,6 +1,6 @@
-import { ShoppingCart, Menu, X, Search } from 'lucide-react';
+import { ShoppingCart, Menu, X, Search, Shield, Star } from 'lucide-react';
 import { useState } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate, useLocation, Link } from 'react-router-dom';
 import { useCart } from '@/hooks/useCart';
 import { Button } from '@/components/ui/button';
 import CartSheet from './CartSheet';
@@ -18,7 +18,6 @@ const Header = () => {
     { name: 'Loa', hash: '#speaker' },
     { name: 'Củ Sạc', hash: '#charger' },
     { name: 'Cáp Sạc', hash: '#cable' },
-    { name: 'Đánh giá', hash: '#reviews' },
   ];
 
   const handleNavClick = (hash: string) => {
@@ -52,7 +51,7 @@ const Header = () => {
           </button>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden md:flex items-center gap-6">
             {navLinks.map(link => (
               <button
                 key={link.name}
@@ -62,6 +61,24 @@ const Header = () => {
                 {link.name}
               </button>
             ))}
+            
+            {/* Highlighted Links */}
+            <div className="flex items-center gap-2 ml-2 pl-4 border-l border-border">
+              <Link
+                to="/chinh-sach-bao-hanh"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-primary/10 text-primary border border-primary/30 rounded-full text-sm font-medium hover:bg-primary/20 transition-colors"
+              >
+                <Shield className="w-3.5 h-3.5" />
+                Bảo hành
+              </Link>
+              <button
+                onClick={() => handleNavClick('#reviews')}
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-amber-500/10 text-amber-500 border border-amber-500/30 rounded-full text-sm font-medium hover:bg-amber-500/20 transition-colors"
+              >
+                <Star className="w-3.5 h-3.5" />
+                Đánh giá
+              </button>
+            </div>
           </nav>
 
           {/* Actions */}
@@ -110,6 +127,28 @@ const Header = () => {
                 {link.name}
               </button>
             ))}
+            
+            {/* Highlighted Mobile Links */}
+            <div className="flex gap-2 mt-4 pt-4 border-t border-border">
+              <Link
+                to="/chinh-sach-bao-hanh"
+                onClick={() => setMobileMenuOpen(false)}
+                className="inline-flex items-center gap-1.5 px-3 py-2 bg-primary/10 text-primary border border-primary/30 rounded-lg text-sm font-medium"
+              >
+                <Shield className="w-4 h-4" />
+                Bảo hành
+              </Link>
+              <button
+                onClick={() => {
+                  handleNavClick('#reviews');
+                  setMobileMenuOpen(false);
+                }}
+                className="inline-flex items-center gap-1.5 px-3 py-2 bg-amber-500/10 text-amber-500 border border-amber-500/30 rounded-lg text-sm font-medium"
+              >
+                <Star className="w-4 h-4" />
+                Đánh giá
+              </button>
+            </div>
           </nav>
         )}
       </div>
