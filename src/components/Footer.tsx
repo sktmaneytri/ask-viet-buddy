@@ -64,7 +64,7 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Hỗ trợ</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Chính sách bảo hành</a></li>
+              <li><a href="/chinh-sach-bao-hanh" className="text-muted-foreground hover:text-foreground transition-colors">Chính sách bảo hành</a></li>
               <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Chính sách đổi trả</a></li>
               <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Hướng dẫn mua hàng</a></li>
               <li><a href="#reviews" className="text-muted-foreground hover:text-foreground transition-colors">Đánh giá khách hàng</a></li>
