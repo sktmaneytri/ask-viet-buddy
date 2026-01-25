@@ -38,7 +38,7 @@ const ChatSupport = () => {
     setTimeout(() => {
       const autoReply: Message = {
         id: (Date.now() + 1).toString(),
-        text: 'Cảm ơn bạn đã liên hệ! Nhân viên hỗ trợ sẽ phản hồi trong thời gian sớm nhất. Hotline: 0123 456 789',
+        text: 'Cảm ơn bạn đã liên hệ! Nhân viên hỗ trợ sẽ phản hồi trong thời gian sớm nhất. Hotline: +84 382 943 017',
         sender: 'support',
         time: new Date().toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit' })
       };
