@@ -14,7 +14,7 @@ const Header = () => {
 
   const navLinks = [
     { name: 'Trang chủ', hash: '#home' },
-    { name: 'AirPods', hash: '#airpods' },
+    { name: 'Tai nghe bluetooth', hash: '#airpods' },
     { name: 'Loa', hash: '#speaker' },
     { name: 'Củ Sạc', hash: '#charger' },
     { name: 'Cáp Sạc', hash: '#cable' },
@@ -38,8 +38,8 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <button 
-            onClick={() => handleNavClick('#home')} 
+          <button
+            onClick={() => handleNavClick('#home')}
             className="flex items-center gap-2"
           >
             <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
@@ -61,7 +61,7 @@ const Header = () => {
                 {link.name}
               </button>
             ))}
-            
+
             {/* Highlighted Links */}
             <div className="flex items-center gap-2 ml-2 pl-4 border-l border-border">
               <Link
@@ -86,10 +86,10 @@ const Header = () => {
             <Button variant="ghost" size="icon" className="hidden md:flex">
               <Search className="w-5 h-5" />
             </Button>
-            
-            <Button 
-              variant="ghost" 
-              size="icon" 
+
+            <Button
+              variant="ghost"
+              size="icon"
               className="relative"
               onClick={() => setCartOpen(true)}
             >
@@ -127,7 +127,7 @@ const Header = () => {
                 {link.name}
               </button>
             ))}
-            
+
             {/* Highlighted Mobile Links */}
             <div className="flex gap-2 mt-4 pt-4 border-t border-border">
               <Link

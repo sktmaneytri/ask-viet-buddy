@@ -28,21 +28,21 @@ const HeroSection = () => {
             </h1>
 
             <p className="text-lg text-muted-foreground mb-8 max-w-md mx-auto lg:mx-0">
-              AirPods hổ vằn, loa, củ sạc, cáp sạc zin - chính hãng cam kết chất lượng tốt nhất cho khách hàng.
+              Tai nghe không dây bluetooth hổ vằn, loa, củ sạc, cáp sạc zin - chính hãng cam kết chất lượng tốt nhất cho khách hàng.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button 
+              <Button
                 className="btn-primary-solid h-14 text-base px-8 gap-2"
                 onClick={() => window.location.hash = 'airpods'}
               >
                 Mua ngay
                 <ArrowRight className="w-5 h-5" />
               </Button>
-              <Button variant="outline" 
-               className="h-14 text-base px-8 border-border hover:bg-secondary"
-               onClick={() => window.location.hash = 'charger'}
-               >
+              <Button variant="outline"
+                className="h-14 text-base px-8 border-border hover:bg-secondary"
+                onClick={() => window.location.hash = 'charger'}
+              >
                 Xem sản phẩm
               </Button>
             </div>

@@ -17,8 +17,8 @@ const Index = () => {
         <CategorySection />
         <ProductSection
           categoryId="airpods"
-          title="AirPods"
-          subtitle="Tai nghe không dây chính hãng Apple với âm thanh đỉnh cao"
+          title="Tai nghe Bluetooth"
+          subtitle="Tai nghe không dây Bluetooth với âm thanh đỉnh cao"
         />
         <ProductSection
           categoryId="speaker"
