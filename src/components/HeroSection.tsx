@@ -88,16 +88,16 @@ const HeroSection = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button
-                className="btn-primary-solid h-14 text-base px-8 gap-2"
+                className="btn-primary-solid h-14 text-base px-8 gap-2 w-full sm:w-auto"
                 onClick={() => window.location.hash = 'airpods'}
               >
                 Mua ngay
                 <ArrowRight className="w-5 h-5" />
               </Button>
-              <div className="relative">
+              <div className="relative w-full sm:w-auto">
                 <SparkleEffect />
                 <Button variant="outline"
-                  className="btn-shimmer h-14 text-base px-8 border-amber-400/50 bg-amber-500/5 hover:bg-amber-500/10 hover:border-amber-400/70 text-foreground font-semibold shadow-[0_0_15px_rgba(251,191,36,0.15)] hover:shadow-[0_0_25px_rgba(251,191,36,0.25)] transition-all duration-300"
+                  className="h-14 text-base px-8 w-full sm:w-auto border-amber-400/50 bg-amber-500/5 hover:bg-amber-500/10 hover:border-amber-400/70 text-foreground font-semibold shadow-[0_0_15px_rgba(251,191,36,0.15)] hover:shadow-[0_0_25px_rgba(251,191,36,0.25)] transition-all duration-300"
                   onClick={() => window.location.hash = 'charger'}
                 >
                   <Sparkles className="w-5 h-5 text-amber-400" />
