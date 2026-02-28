@@ -192,4 +192,15 @@
     0% { left: -100%; }
     100% { left: 200%; }
   }
+
+  .animate-sparkle-star {
+    animation: sparkleStar 1.2s ease-in-out forwards;
+  }
+
+  @keyframes sparkleStar {
+    0% { opacity: 0; transform: scale(0) rotate(0deg); }
+    30% { opacity: 1; transform: scale(1) rotate(90deg); }
+    70% { opacity: 1; transform: scale(0.8) rotate(180deg); }
+    100% { opacity: 0; transform: scale(0) rotate(270deg); }
+  }
 }
