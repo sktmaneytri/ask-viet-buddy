@@ -40,10 +40,11 @@ const HeroSection = () => {
                 <ArrowRight className="w-5 h-5" />
               </Button>
               <Button variant="outline"
-                className="h-14 text-base px-8 border-border hover:bg-secondary"
+                className="btn-shimmer h-14 text-base px-8 border-primary/40 bg-primary/5 hover:bg-primary/10 hover:border-primary/60 text-primary font-semibold shadow-md hover:shadow-lg transition-all duration-300"
                 onClick={() => window.location.hash = 'charger'}
               >
                 Xem sản phẩm
+                <ArrowRight className="w-5 h-5 ml-1" />
               </Button>
             </div>
 
