@@ -1,4 +1,4 @@
-import { Product, Category, Testimonial } from '@/types/product';
+import { Category, Product, Testimonial } from '@/types/product';
 
 export const categories: Category[] = [
   {
@@ -236,16 +236,67 @@ export const products: Product[] = [
 
   // Củ sạc iPhone < 15
   {
-    id: 'apple-20w',
-    name: 'Apple 20W USB-C Power Adapter',
+    id: 'cm-20w',
+    name: 'Củ sạc nhanh CM Mini GaN công suất 20W cho iPhone 14 trở xuống',
     category: 'charger',
     subcategory: 'iphone-old',
-    brand: 'Apple',
-    price: 590000,
-    image: 'https://alodidong.vn/storage/image/san-pham/phu-kien/cu-sac/cu-sac-nhanh-iphone-type-c-20w.jpg',
-    description: 'Củ sạc Apple 20W chính hãng cho iPhone 14 trở xuống',
-    specifications: ['Công suất 20W', 'Cổng USB-C', 'Sạc nhanh', 'Chính hãng Apple'],
-    inStock: false,
+    brand: 'CM',
+    price: 150000,
+    image: 'https://cmvietnam.com/wp-content/uploads/2025/08/15.png',
+    images: [
+      'https://cmvietnam.com/wp-content/uploads/2025/08/15.png',
+      'https://cmvietnam.com/wp-content/uploads/2025/08/IMG_9526-1536x1536.jpg',
+      'https://cmvietnam.com/wp-content/uploads/2025/08/IMG_9529-768x768.jpg',
+      'https://cmvietnam.com/wp-content/uploads/2025/08/IMG_9527-1536x1536.jpg',
+      'https://cmvietnam.com/wp-content/uploads/2025/08/IMG_9528-1536x1536.jpg',
+      'https://cmvietnam.com/wp-content/uploads/2025/08/11-2-768x768.png',
+    ],
+    description: 'Củ sạc CM 20W chính hãng cho iPhone 14 trở xuống',
+    videoUrl: 'https://www.youtube.com/watch?v=vZ5eznbP1ss',
+    specifications: ['Công suất 20W', 'Cổng USB-C', 'Sạc nhanh', 'Chính hãng CM'],
+    inStock: true,
+    rating: 4.8,
+    reviews: 90
+  },
+  {
+    id: 'cm-30w',
+    name: 'Củ sạc nhanh CM Mini GaN công suất 30W cho iPhone 15 trở lên',
+    category: 'charger',
+    subcategory: 'iphone-new',
+    brand: 'CM',
+    price: 160000,
+    image: 'https://cmvietnam.com/wp-content/uploads/2025/08/Artboard-1-copy-2@5x-100-1536x1536.jpg',
+    images: [
+      'https://cmvietnam.com/wp-content/uploads/2025/08/Artboard-1-copy-2@5x-100-1536x1536.jpg',
+      'https://cmvietnam.com/wp-content/uploads/2025/08/Artboard-1-copy-8@5x-100-1536x1536.jpg',
+      'https://cmvietnam.com/wp-content/uploads/2025/08/6-7-1536x1536.png',
+    ],
+    description: 'Củ sạc nhanh CM Mini GaN công suất 30W cho iPhone 15 trở lên',
+    videoUrl: 'https://www.youtube.com/watch?v=vZ5eznbP1ss',
+    specifications: ['Công suất 30W', 'Cổng USB-C', 'Sạc nhanh', 'Chính hãng CM'],
+    inStock: true,
+    rating: 4.8,
+    reviews: 90
+  },
+  {
+    id: 'cm-33w',
+    name: 'Củ sạc nhanh CM Mini GaN công suất 33W cho iPhone 17 trở lên',
+    category: 'charger',
+    subcategory: 'iphone-new',
+    brand: 'CM',
+    price: 200000,
+    image: 'https://cmvietnam.com/wp-content/uploads/2025/08/Artboard-1@5x-100-2048x2048.jpg',
+    images: [
+      'https://cmvietnam.com/wp-content/uploads/2025/08/Artboard-1@5x-100-2048x2048.jpg',
+      'https://cmvietnam.com/wp-content/uploads/2025/08/Artboard-1-copy-5@5x-100-1536x1536.jpg',
+      'https://cmvietnam.com/wp-content/uploads/2025/08/Artboard-1-copy-6@5x-100-1536x1536.jpg',
+      'https://cmvietnam.com/wp-content/uploads/2025/08/Artboard-1-copy@5x-100-768x768.jpg',
+      'https://cmvietnam.com/wp-content/uploads/2025/08/5-11-768x768.png'
+    ],
+    description: 'Củ sạc nhanh CM Mini GaN công suất 33W cho iPhone 17 trở lên',
+    videoUrl: 'https://www.youtube.com/watch?v=vZ5eznbP1ss',
+    specifications: ['Công suất 33W', 'Cổng USB-C', 'Sạc nhanh', 'Chính hãng CM'],
+    inStock: true,
     rating: 4.8,
     reviews: 90
   },
@@ -295,8 +346,58 @@ export const products: Product[] = [
     rating: 4.8,
     reviews: 67
   },
+  {
+    id: 'apple-20w',
+    name: 'Apple 20W USB-C Power Adapter',
+    category: 'charger',
+    subcategory: 'iphone-old',
+    brand: 'Apple',
+    price: 590000,
+    image: 'https://alodidong.vn/storage/image/san-pham/phu-kien/cu-sac/cu-sac-nhanh-iphone-type-c-20w.jpg',
+    description: 'Củ sạc Apple 20W chính hãng cho iPhone 14 trở xuống',
+    specifications: ['Công suất 20W', 'Cổng USB-C', 'Sạc nhanh', 'Chính hãng Apple'],
+    inStock: false,
+    rating: 4.8,
+    reviews: 90
+  },
 
   // Cáp sạc
+  {
+    id: 'cm-usbc-lightning',
+    name: 'Cáp CM sạc nhanh Type C – Lightning công suất 27W',
+    category: 'cable',
+    brand: 'CM',
+    price: 120000,
+    image: 'https://cmvietnam.com/wp-content/uploads/2025/07/11-5-1536x1536.jpg',
+    images: [
+      'https://cmvietnam.com/wp-content/uploads/2025/07/11-5-1536x1536.jpg',
+    'https://cmvietnam.com/wp-content/uploads/2025/07/12-5-1536x1536.jpg',
+  'https://cmvietnam.com/wp-content/uploads/2025/07/1-7-1536x1536.jpg',
+'https://cmvietnam.com/wp-content/uploads/2025/07/1-10-768x768.png'],
+    description: 'Cáp sạc CM USB-C to Lightning cho iPhone 14 trở xuống',
+    specifications: ['Dài 1.5m', 'USB-C to Lightning', 'Sạc nhanh', 'Chính hãng'],
+    inStock: true,
+    rating: 4.7,
+    reviews: 90
+  },
+  {
+    id: 'cm-usbc-usbc',
+    name: 'Cáp CM sạc nhanh Type C – Type C công suất 65W',
+    category: 'cable',
+    brand: 'CM',
+    price: 130000,
+    image: 'https://cmvietnam.com/wp-content/uploads/2025/07/11-1-1536x1536.jpg',
+    images: [
+      'https://cmvietnam.com/wp-content/uploads/2025/07/11-1-1536x1536.jpg',
+    'https://cmvietnam.com/wp-content/uploads/2025/07/11-1-1536x1536.jpg',
+  'https://cmvietnam.com/wp-content/uploads/2025/07/12-1-1536x1536.jpg',
+'https://cmvietnam.com/wp-content/uploads/2025/07/1-6-768x768.png'],
+    description: 'Cáp sạc CM USB-C to USB-C cho iPhone 15 series trở lên',
+    specifications: ['Dài 1.5m', 'USB-C to USB-C', 'Sạc nhanh', 'Chính hãng'],
+    inStock: true,
+    rating: 4.7,
+    reviews: 90
+  },
   {
     id: 'apple-usbc-lightning',
     name: 'Apple USB-C to Lightning 1.5m',
