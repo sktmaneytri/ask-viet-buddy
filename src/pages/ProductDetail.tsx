@@ -4,13 +4,13 @@ import { useCart } from '@/hooks/useCart';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { toast } from 'sonner';
-import { 
-  ArrowLeft, 
-  Star, 
-  ShoppingCart, 
-  Check, 
-  Truck, 
-  Shield, 
+import {
+  ArrowLeft,
+  Star,
+  ShoppingCart,
+  Check,
+  Truck,
+  Shield,
   RotateCcw,
   Minus,
   Plus
@@ -80,18 +80,18 @@ const ProductDetail = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      
+
       <main className="container mx-auto px-4 py-8">
         {/* Breadcrumb */}
         <div className="flex items-center gap-2 mb-6 text-sm text-muted-foreground">
-          <button 
+          <button
             onClick={() => navigate('/')}
             className="hover:text-foreground transition-colors"
           >
             Trang chủ
           </button>
           <span>/</span>
-          <button 
+          <button
             onClick={() => navigate(`/#${product.category}`)}
             className="hover:text-foreground transition-colors capitalize"
           >
@@ -102,9 +102,9 @@ const ProductDetail = () => {
         </div>
 
         {/* Back button */}
-        <Button 
-          variant="ghost" 
-          onClick={() => navigate(-1)} 
+        <Button
+          variant="ghost"
+          onClick={() => navigate(-1)}
           className="mb-6"
         >
           <ArrowLeft className="w-4 h-4 mr-2" />
@@ -130,18 +130,17 @@ const ProductDetail = () => {
               {product.brand}
             </Badge>
             <h1 className="text-3xl lg:text-4xl font-bold mb-4">{product.name}</h1>
-            
+
             {/* Rating */}
             <div className="flex items-center gap-3 mb-6">
               <div className="flex items-center gap-1">
                 {[...Array(5)].map((_, i) => (
                   <Star
                     key={i}
-                    className={`w-5 h-5 ${
-                      i < Math.floor(product.rating)
+                    className={`w-5 h-5 ${i < Math.floor(product.rating)
                         ? 'fill-yellow-500 text-yellow-500'
                         : 'text-muted-foreground'
-                    }`}
+                      }`}
                   />
                 ))}
               </div>
@@ -178,7 +177,7 @@ const ProductDetail = () => {
                 <iframe
                   width="100%"
                   height="315"
-                  src={product.videoUrl.includes('youtube.com') || product.videoUrl.includes('youtu.be') 
+                  src={product.videoUrl.includes('youtube.com') || product.videoUrl.includes('youtu.be')
                     ? product.videoUrl.replace('watch?v=', 'embed/').replace('youtu.be/', 'youtube.com/embed/')
                     : product.videoUrl
                   }
@@ -233,7 +232,7 @@ const ProductDetail = () => {
                   <Plus className="w-4 h-4" />
                 </Button>
               </div>
-              
+
               <Button
                 onClick={handleAddToCart}
                 disabled={!product.inStock}
@@ -256,7 +255,7 @@ const ProductDetail = () => {
               <div className="flex items-center gap-3">
                 <Shield className="w-5 h-5 text-primary" />
                 <div>
-                  <p className="text-sm font-medium">Bảo hành 12 tháng</p>
+                  <p className="text-sm font-medium">Bảo hành 06 tháng</p>
                   <p className="text-xs text-muted-foreground">1 đổi 1</p>
                 </div>
               </div>
