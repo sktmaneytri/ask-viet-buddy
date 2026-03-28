@@ -34,7 +34,7 @@ export const products: Product[] = [
     name: 'Tai nghe Bluetooth AP4',
     category: 'airpods',
     brand: 'Hàng replica',
-    price: 280000,
+    price: 238000,
     originalPrice: 599000,
     image: 'https://media.istockphoto.com/id/2237358070/vi/anh/tai-nghe-kh%C3%B4ng-d%C3%A2y-hi%E1%BB%87n-%C4%91%E1%BA%A1i-m%C3%A0u-tr%E1%BA%AFng-b%E1%BB%8B-c%C3%B4-l%E1%BA%ADp-tr%C3%AAn-n%E1%BB%81n-tr%E1%BA%AFng-sao-ch%C3%A9p-kh%C3%B4ng-gian.jpg?s=2048x2048&w=is&k=20&c=S77IzExYDkGCuEIVCNl9lI89yDpagM54mvKI1ji4iE0=',
     images: [
@@ -58,7 +58,7 @@ export const products: Product[] = [
     name: 'Tai nghe Bluetooth AP Pro',
     category: 'airpods',
     brand: 'Hàng replica',
-    price: 250000,
+    price: 220000,
     originalPrice: 350000,
     image: 'https://images.unsplash.com/photo-1580477371194-4593e3c7c6cf?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     images: [
