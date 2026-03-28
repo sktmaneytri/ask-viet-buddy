@@ -58,7 +58,7 @@ export const products: Product[] = [
     name: 'Tai nghe Bluetooth AP Pro',
     category: 'airpods',
     brand: 'Hàng replica',
-    price: 220000,
+    price: 250000,
     originalPrice: 350000,
     image: 'https://images.unsplash.com/photo-1580477371194-4593e3c7c6cf?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     images: [
@@ -79,7 +79,7 @@ export const products: Product[] = [
     name: 'Tai nghe Bluetooth AP Pro 2',
     category: 'airpods',
     brand: 'Hàng replica',
-    price: 260000,
+    price: 220000,
     image: 'https://www.duchuymobile.com/images/detailed/88/airpods-pro-gen-2-magsafe-charge-usb-c-trang.jpg',
     images: [
       'https://pakistanstore.pk/wp-content/uploads/2022/12/Apple-AirPods-Pro-2-ANC-Copy.jpg',
