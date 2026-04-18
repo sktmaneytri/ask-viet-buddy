@@ -1,4 +1,4 @@
-import { ArrowLeft, Headphones, Speaker, Cable, AlertTriangle, Truck, Shield, CheckCircle2, Facebook, Instagram } from 'lucide-react';
+import { ArrowLeft, Headphones, Speaker, Cable, AlertTriangle, Truck, Shield, CheckCircle2, Facebook, Instagram, Battery } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -122,6 +122,43 @@ const WarrantyPolicy = () => {
                   <div className="p-3 bg-secondary/50 rounded-lg border border-border">
                     <p className="font-medium text-sm">Củ sạc Anker & Remax</p>
                     <p className="text-primary font-semibold">Bảo hành 06 tháng – bao đổi trả</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Pin - Bảo hành đặc biệt */}
+            <div className="group relative bg-card border-2 border-rose-500/40 rounded-2xl p-8 hover:border-rose-500/70 transition-all duration-300 hover:shadow-lg hover:shadow-rose-500/15 md:col-span-3 lg:col-span-1">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-rose-500/5 rounded-bl-full" />
+              <div className="relative">
+                <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-rose-500/20 mb-6 group-hover:scale-110 transition-transform">
+                  <Battery className="w-7 h-7 text-rose-500" />
+                </div>
+                <h3 className="text-2xl font-bold mb-2 text-rose-500">Bảo Hành Pin</h3>
+                <p className="text-sm text-muted-foreground mb-4">Áp dụng cho tất cả sản phẩm có pin</p>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3 p-4 bg-rose-500/10 rounded-xl border border-rose-500/30">
+                    <CheckCircle2 className="w-5 h-5 text-rose-500 mt-0.5 flex-shrink-0" />
+                    <div>
+                      <p className="font-semibold text-rose-500">Bảo hành 30 ngày đầu</p>
+                      <p className="text-sm text-muted-foreground">1 đổi 1 nếu pin có lỗi từ nhà sản xuất</p>
+                    </div>
+                  </div>
+                  <div className="p-4 bg-amber-500/10 rounded-xl border border-amber-500/30">
+                    <p className="text-sm text-amber-600">
+                      <span className="font-semibold">Lưu ý quan trọng:</span> Pin là linh kiện có tuổi thọ theo thời gian và số lần sạc. 
+                      Sau 30 ngày, pin sẽ không còn được bảo hành vì đây là tình trạng hao mòn tự nhiên.
+                    </p>
+                  </div>
+                  <div className="space-y-2 text-muted-foreground text-sm">
+                    <p className="flex items-center gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-rose-500" />
+                      Áp dụng cho tai nghe, loa, và thiết bị có pin
+                    </p>
+                    <p className="flex items-center gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-rose-500" />
+                      Không bảo hành pin bị chai do sử dụng lâu ngày
+                    </p>
                   </div>
                 </div>
               </div>
