@@ -128,35 +128,35 @@ const WarrantyPolicy = () => {
             </div>
 
             {/* Pin - Bảo hành đặc biệt */}
-            <div className="group relative bg-card border-2 border-rose-500/40 rounded-2xl p-8 hover:border-rose-500/70 transition-all duration-300 hover:shadow-lg hover:shadow-rose-500/15 md:col-span-3 lg:col-span-1">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-rose-500/5 rounded-bl-full" />
+            <div className="group relative bg-card border-2 border-accent/40 rounded-2xl p-8 hover:border-accent/70 transition-all duration-300 hover:shadow-lg hover:shadow-accent/15 md:col-span-3 lg:col-span-1">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-accent/5 rounded-bl-full" />
               <div className="relative">
-                <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-rose-500/20 mb-6 group-hover:scale-110 transition-transform">
-                  <Battery className="w-7 h-7 text-rose-500" />
+                <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-accent/20 mb-6 group-hover:scale-110 transition-transform">
+                  <Battery className="w-7 h-7 text-accent-foreground" />
                 </div>
-                <h3 className="text-2xl font-bold mb-2 text-rose-500">Bảo Hành Pin</h3>
+                <h3 className="text-2xl font-bold mb-2 text-accent-foreground">Bảo Hành Pin</h3>
                 <p className="text-sm text-muted-foreground mb-4">Áp dụng cho tất cả sản phẩm có pin</p>
                 <div className="space-y-4">
-                  <div className="flex items-start gap-3 p-4 bg-rose-500/10 rounded-xl border border-rose-500/30">
-                    <CheckCircle2 className="w-5 h-5 text-rose-500 mt-0.5 flex-shrink-0" />
+                  <div className="flex items-start gap-3 p-4 bg-accent/10 rounded-xl border border-accent/30">
+                    <CheckCircle2 className="w-5 h-5 text-accent-foreground mt-0.5 flex-shrink-0" />
                     <div>
-                      <p className="font-semibold text-rose-500">Bảo hành 30 ngày đầu</p>
+                      <p className="font-semibold text-accent-foreground">Bảo hành 30 ngày đầu</p>
                       <p className="text-sm text-muted-foreground">1 đổi 1 nếu pin có lỗi từ nhà sản xuất</p>
                     </div>
                   </div>
-                  <div className="p-4 bg-amber-500/10 rounded-xl border border-amber-500/30">
-                    <p className="text-sm text-amber-600">
+                  <div className="p-4 bg-muted rounded-xl border border-border">
+                    <p className="text-sm text-foreground">
                       <span className="font-semibold">Lưu ý quan trọng:</span> Pin là linh kiện có tuổi thọ theo thời gian và số lần sạc. 
                       Sau 30 ngày, pin sẽ không còn được bảo hành vì đây là tình trạng hao mòn tự nhiên.
                     </p>
                   </div>
                   <div className="space-y-2 text-muted-foreground text-sm">
                     <p className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-rose-500" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-accent" />
                       Áp dụng cho tai nghe, loa, và thiết bị có pin
                     </p>
                     <p className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-rose-500" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-accent" />
                       Không bảo hành pin bị chai do sử dụng lâu ngày
                     </p>
                   </div>
