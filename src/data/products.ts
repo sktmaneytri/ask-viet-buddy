@@ -49,7 +49,7 @@ export const products: Product[] = [
     description: 'AP 4 ANC mới nhất với thiết kế cải tiến và âm thanh vượt trội - công nghệ chống ồn chủ động. Kết nối được với mọi thiết bị Bluetooth từ android, iPhone, iPad, laptop. Chất âm bass giống bản auth 95%. Tai nghe nhỏ gọn đau không bị đau tai, phù hợp với mọi đối tượng sử dụng.',
     videoUrl: 'https://youtu.be/UIbageHlhiM',
     specifications: ['Chip A12', 'Chống ồn chủ động ANC', 'Thiết kế mới', 'Pin 5 giờ', 'Sạc USB-C', '2 lần chạm'],
-    inStock: true,
+    inStock: false,
     rating: 4.9,
     reviews: 18
   },
@@ -90,7 +90,7 @@ export const products: Product[] = [
     videoUrl: 'https://youtu.be/mDt3_DXMHMM',
     description: 'AirPods Pro 2 là dòng tai nghe blutooth thế hệ mới, được nâng cấp từ phiên bản cũ với nhiều tính năng vượt trội, chất lượng âm bass gần bằng 90% so với bản authentic. Kết nối với mọi dòng thiết bị từ android iPhone iPad, laptop đều được hỗ trợ.',
     specifications: ['Chip H2', 'Chống ồn 2x', 'Âm thanh không gian', 'Adaptive Audio', 'Kết nối đa thiết bị', 'Pin 6 giờ'],
-    inStock: true,
+    inStock: false,
     rating: 5.0,
     reviews: 24
   },
